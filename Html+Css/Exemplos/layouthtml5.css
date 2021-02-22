@@ -1,0 +1,156 @@
+body{
+    background-image: url("../images/background-madeira.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0px;
+
+}
+
+#wrapper{
+    margin: 20px auto 40px auto;
+    max-width: 920px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    
+}
+a{
+    text-decoration: none;
+}
+/*                      HEADER                  */
+header{
+    background-color: #7e7e7e;
+    color:#ffffff;
+    height: 200px;
+    padding: 0px;    
+
+}
+header hgroup{
+    padding:50px 0px 45px 0px;
+    margin-left:-300px;
+    
+}
+h1, h3{
+    margin: 0px;
+}
+
+header img{
+    
+    width: 100px;
+    position:absolute;
+    left:350px;
+    top:30px;
+    margin: 0px;    
+}
+
+header a{
+    color:#ffffff;
+
+}
+header nav ul{
+    list-style: none;
+    background-color: #b2b2b2;
+    text-align: left;  
+    padding: 10px 0px 10px 0px;  
+}
+header li{
+    display:inline;
+    width:auto;
+    padding:15px;    
+    margin: 0px;
+
+
+}
+header li :hover{
+    color:rgb(89, 43, 0);
+}
+
+/*                     Artigos                         */
+#artigos{
+    width: 590px;
+    margin: 20px 0px 20px 20px;
+    float:left;
+
+
+}
+article{
+    clear:both;
+    overflow:auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+article figure{
+    margin: 10px 5px 10px 0px;
+    padding: 10px 5px 10px 0px;
+    text-align: left;
+    width: 250px;
+    float:left;
+
+}
+.text{
+    width: 300px;
+    text-align: justify;
+    margin:20px 0px 0px 20px;
+    padding:2px;
+    float:left;
+
+}
+
+.text a{
+    color:#000000;
+}
+.text h3{
+    font-size: 15px;
+    color:rgb(255, 115, 0);
+}
+
+/*              ASIDE             */
+aside section a{
+    color:rgb(255, 115, 0);
+    font-weight: bold;
+    padding: 5px 2px 5px 2px;
+    border-bottom: 1px solid #ebe8e8 ;
+    
+    
+}
+aside section a:hover{
+    background-color:#f1efef;
+}
+aside section li{
+    padding-top: 20px;    
+    font-size:15px;
+    text-align: left;
+
+    
+}
+aside section h1{
+    color:rgb(255, 115, 0);
+    font-weight: bold;
+    font-size:20px;
+    
+    
+}
+aside section ul{
+    list-style: none;
+    margin:0px;
+    padding: 10px 5px 5px 5px;
+}
+aside section{
+    height: 200px;
+    width: 260px;
+    margin: 40px 20px 20px 10px;
+    float: right;
+    text-align: left;
+    clear:right;
+}
+
+/*         Footer            */
+footer{
+    background-color: #b2b2b2;
+    color:#ffffff;
+    height: 20px;
+    text-align: left;
+    padding: 10px 5px 5px 40px;
+    clear:both;
+    
+}

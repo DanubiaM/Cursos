@@ -1,0 +1,84 @@
+/*RGBA color*/
+#opacity{
+    background-color: rgba(0, 163, 228, 0.3);
+}
+
+#ph{
+    background-color: rgba(199, 198, 198, 0.829);
+    color: #6E6C6B;
+    padding: inherit;
+}
+#c14{
+    color: white;
+    background-color: #0066ff;
+}
+
+#c13{
+    color: white;
+    background-color: #0C85E8;
+}
+
+#c12{
+    color:white;
+    background-color: #40A9FF;
+}
+
+#c11{
+    color:white;
+    background-color: #68B0EB;
+}
+
+#c10{
+    color: white;
+    background-color: #A3D6FF;
+}
+
+#c9{
+    color: white;
+    background-color: #D9EEFF;
+}
+
+#c8{
+    color:white;
+    background-color: #47EB38;
+}
+
+#c7{
+    color: white;
+    background-color: #FFDEFE;
+}
+
+#c6{
+    color:white;
+    background-color: #FBA8FF;
+}
+
+#c5{
+    color:white;
+    background-color: #EA6EEB;
+}
+
+#c4{
+    color: white;
+    background-color: #FC45FF;
+}
+
+#c3{
+    color: white;
+    background-color: #E107E8;
+}
+
+#c2{
+    color: white;
+    background-color: #c406ca;
+}
+
+#c1{
+    color: white;
+    background-color: #c903cf;
+}
+
+#c0{
+    color: white;
+    background-color: #9b00a0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms+Buttons</title>
+</head>
+<body>
+
+    <form action="www.algumsite.com/reviw.php" method="get">
+    <!-- Informações do usuario -->
+    <fieldset>
+        <legend>Seus Detalhes:</legend>
+        <label for="username">Nome:</label>
+            <input type="text" name="nome" id="username" maxlength="30" size="30">
+        <br/>
+        <label for="useremail">Email:</label>
+            <input type="email" name="email" id="useremail" maxlength="30" size="30">
+
+    </fieldset>
+    <!-- Informações da pesquisa -->
+    <fieldset>
+        <legend>Sua Review</legend>
+        <p>Como ficou sabendo sobre nós?
+            <select name="midia">
+                <option value="Google">Google</option>
+                <option value="social">Rede Social</option>
+                <option value="radio">Rádio</option>
+                <option value="Jornal">Jornal</option>
+            </select>                
+            <br/>
+            Você nos visitaria novamente?
+            <input type="checkbox" name="Sim">Sim
+            <input type="checkbox" name="Não" >Não
+            <input type="checkbox" name="Talvez" >Talvez
+            <br/>
+            <br/>
+            <label for="commits">Comentários:</label>
+            <br/>
+            <textarea name="commits" id="commits" cols="50" rows="5"></textarea>
+            <br/>
+            <input type="radio" name="upade" id="up">
+            <label for="up">Envia-me atualizações por email</label>
+            <br/>
+            <button type="submit">Envie a Review</button>
+
+        </p>
+     </fieldset>
+  </form>
+ </body>
+</html>

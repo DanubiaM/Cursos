@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./16.images.css" type="text/css">
+    <title>CSS: Imagens</title>
+</head>
+<body>
+    <h1>CSS: Imagens</h1>
+    <h2>Controlando o tamanho das imagens</h2>
+    <p>
+        Para mudarmos o tamanho da imagem usando o CSS, basta que utilizemos a propriedade width e height, e então especefique
+        o valor.
+        Sempre que vamos utilizar imagens no site, devemos definir um tamanho para <strong>small, medium e large</strong>. 
+        E então sempre que adicionarmos a imagem no html, em vez de definirmos seu tamanho no prório html, podemos chamar entao uma classe
+        com o nome de img.small ou img.medium ou img.large. 
+        Por exemplo, podemos definir as seguintes propriedades:
+        <br>Imagem large: width:500px height: 500px;
+        <br><img src="./images/piano1.jpg" alt="" class="img-large" > 
+        <br>imagem medium: width:250px height: 250px;
+        <br><img src="./images/piano2.jpg" alt="" class="img-medium">
+        <br>imagem small: width:100px height:100px;
+        <br><img src="./images/piano3.jpg" alt="" class="img-small">
+    </p>
+    <hr>
+    <h2>Alinhamento de imagens</h2>
+    <p>
+        <img src="./images/5efc731f49df30021361b9cfaaef28b2.gif" alt="" class="img-align-left img-small" >
+        Como ja vimos anteriormente, podemos utilizar a propriedade <em>float</em> para realizar o alinhamento 
+        dos blocos. Desta maneira também podemos utiliza-la para alinhar uma imagem. Podemos também utilizar junto
+        a propriedade margin para que haja um espaçamento entre o texto  e a imagem. 
+    </p>
+    <p>
+        <img src="./images/mouse.gif" alt="" class="img-medium img-align-right">
+        Da mesma maneira de fizemos no escalonamento das imagens,  podemos criar classes que indicam diretamente 
+        o que ira ser feito na imagem, como por exemplo criar uma classe chamada <strong>img-align-left</strong> 
+        para as imagens que deseja ser alinhadas a esquerda, a assim sucessivamente para as demais direções.
+    </p>
+    <h3>Centralizando</h3>
+    <p>
+        <img src="./images/71nQDXqkyDL.png" alt="" class="img-small img-align-center">
+        A centralização de uma imagem é um pouco diferente do método anterior. Devemos utilizar a propriedade <strong>display</strong>. 
+        Por padrão, uma imagem é um elemento inline, isso significa que ela fica entorto de um texto. Dessa maneira, 
+        se desejamos centraliza-la, basta que adicionamento na propriedade display o valor <strong>block</strong> e mudamos também
+        a <strong>margin</strong> para <strong>auto</strong> dessa maneira o navegador decide o valor da margin adequada a ser utilizada
+        comumente ele utiliza o maximo de margin em todo os lados laterais, e dessa maneira alinha o objeto.
+    </p>
+    <hr>
+    <h2>Adicionando background</h2>
+    <p>
+        Podemos adicionar um imagem de fundo tanto em paragrafos, box, body, para isto basta utilizar a propriedade
+        <strong>background-imagen</strong>:url("endereço")
+    </p>
+    <h3>Repetição de imagens</h3>
+    <p>
+        Quando adicionamos uma imagem pequena, que não cobre toda a tela do navegador, podemos perceber por padrão
+        que a imagem é repetida. Existe algumas propriedades que podemos utilziar para que possamos alterar isso se desejar.
+    </p>
+    <h4>background-repeat</h4>
+    <p id="repeat" >
+        Essa propriedade pode conter os seguintes valores: <strong>repeat-x (ira repetir a imagem apenas na direção x), 
+        repeat-y(ira repetir a imagem apenas na direção y) e no-repeat</strong>.
+    </p>
+    <h4>background-attachment</h4>
+    <p class="attachment ">
+        Essa propriedade especifica se a imagem de background deve ficar em uma posição ou seguir o scroll do mouse.
+        Logo possui dois valores <strong>fixed, scroll</strong>. A posição fixed nos da uma impressão que o site esta rodando
+        por cima da imagem, pois ela não ira descer ou subir de acordo com o scroll do mouse, e sim ficar fixada.
+        <br>As imagens por padrão é do tipo scroll.
+    </p>
+    <h3>Posição do Background</h3>
+    <h4>background-position</h4>
+    <p class="position">
+        Podemos especificar a posição de uma imagem  utilizando o background-position. Esta propriedade possui um par de valores,
+        o primeiro representação a posição na horizontal e o segundo da vertical. Podemos então ter as seguintes combinações:
+        left top, left bottom, left center, right top, right bottom, right center, center top, center bottom, center center. 
+        Além dos valores por escrito, podemos especificar os valores de x e y em porcentagem. Exemplo:50% 50%.
+        O topo escordo equivale a 0% 0%.
+    </p>
+    <h3>Forma abreviada the all</h3>
+    <div class="all">
+        <p>
+            Podemos escrever grande parte das propriedades anteriores de forma abreviada, usando apenas a propriedade
+            <strong>background: valores</strong>. Os valores devem ser escritos na seguinte ordem
+            <ol>
+                <li>color</li>
+                <li>image</li>
+                <li>repeat</li>
+                <li>attachment</li>
+                <li>position</li>
+            </ol>
+        </p>
+    </div>
+    <hr>
+    <h2>Imagens de rolagem e sprites</h2>
+    <p>
+        Conhecemos já algumas propriedades do CSS que nos permite mudar as propriedades do texto ao clicar e ao passar o mouse por cima. 
+        Entretanto,  podemos realizar essa mesma ação atraves de uma unica imagem, basta que façamos ela rolar de acordo com o passar do mouse ou clique.
+        Para isto, é necessário que tenhamos uma <strong>UNICA</strong> imagem, e na mesma conter todos os efeitos que desejamos ter ai clicar e passar o mouse,
+        dessa maneira, basta que se utilize a propriedade background-position para mudar a posição da imagem de acordo com a ação do usuario.
+        Por exemplo, a imagem abaixo temos dois botões, cada qual com três tipos de efeitos, um antes de passar ou mouse ou clicar, outro apos passar o mouse e outro
+        após clicar. <br>
+        <img src="./images/sprite.png" alt="" width="350px"> <br>
+        Diante da imagem montamos os buttons abaixo apenas mudando as posições da imagem. <br>
+        <a class="button" id="add-to-basket">Add to basket</a>
+        <a class="button" id="framing-options">Framing options</a>
+    </p>
+    <h2>Gradientes</h2>
+    <p>
+        Podemos criar fundos de imagens gradientes, para isso basta utilizar a propriedade <strong>background-image</strong>. 
+        Temos dois tipos de gradientes o linear e o radial.
+    </p>
+    <hr>
+    <h3>Gradiente Linear</h3>
+    <p>
+        Os seu valores para a propriedade background-image devem ser especificados da seguinte maneira <em>linear-gradient:(direção, cor1, cor2)</em>. 
+        A direção por padrão é top to bottom, entretanto para outras direções podemos especificar seu valor da seguinte maneira:
+        <em><strong>to right</strong>(left to right), <strong>to bottom right</strong>(top left to bottom right), <strong>angulo</strong>(90deg por exemplo)</em>
+        .Além  de duas cores, podemos utilizar quantas cores que desejar, basta adicionar seu nome após a cor 2. 
+        Podemos também utilizar <em>transparencia</em> basta utilizar as cores no formato <em>rgba</em>. 
+    </p>
+    <div class="g-linear"></div>
+    <h4>Repetição do gradiente</h4>
+    <p>
+        Para que as cores do gradiente seja repetida devemos utilizar o seguinte valor <em>background-image: <strong>repeating-linear-gradient(direção/angulos, cores...)</strong></em>
+    </p>
+    <div class="g-repeat"></div>
+</body>
+</html>

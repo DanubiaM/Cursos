@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./17.LayoutHtml5.css" type="text/css">
+    <title>HTML5: LAYOUT</title>
+</head>
+<body>
+    <h1>Layout em HTML 5</h1>
+    <h2>Antigos Layouts</h2>
+    <p>
+        Até essa sessão do livro, foi visto o uso de div para realizar a divisão das partes de um site, como por exemplo
+        uma div  com id identificando a pagina, header, nav, content, article, footer... Entre outras diversas partes de um site.
+        Com o HTML5 surgiu novas tags no HTML.
+    </p>
+    <h2>Novo Layout</h2>
+    <p>
+        O HTML5 nos trouxe novas tags para facilitar a leitura de uma pagina. Mecanismos de pesquisas por exemplo 
+        tem a facilidade de procurar conteudo em uma pagina devido o uso dessas novas tags.
+        <em>Enfim, qual é a mudança? </em> Anteriormente vimos o uso da div com seu id para dividir a pagina, agora
+        não é necessário uma div para realizar essa separação. Por exemplo, uma página sempre contem uma <em>header</em>
+        dessa maneira teremos então uma tag com o nome <strong>header</strong> e frequentemente encontramos uma barra de navegação 
+        dentro da header, logo temos também uma nova tag, a <strong>nav</strong>. Além dessas duas novas tags, temos 
+        a tag <strong>article, aside e footer</strong>.
+    </p>
+    <h3>Headers e Footers</h3>
+    <p>
+        As tags <strong>header e footer</strong> podem ser usadas em um contexto geral da pagina, ou seja, para criar 
+        o cabeçalho e rodapé da pagina, ou então dentro de um artigo ou sessão (tags <strong>article e section</strong>).
+        Dentro de uma <em>header</em> frequentemente encontramos o logo e a barra de navegação, e para artigos pode ser usado
+        para conter o titulo e a data. 
+        O <em>footer</em> encontramos detro dele termos de uso, copyright, polita de privacidade ou links rapidos, já para artigos
+        podemos ter também referenciar bibliograficas dentro da tag footer.
+    </p>
+    <header>
+        <h1>Logo/Titulo</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Quem somos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        &copy; 2021 Danubia M.
+    </footer>
+
+    <hr>
+    <h3>Navegação</h3>
+    <p>
+        A tag <strong>nav</strong> contem o principal bloco de navegação da pagina. Para a criação da barra de navegação, 
+        o funcionamento é o mesmo que o uso da div com id nav e com lista de itens dentro, so muda que não utiliza mais div e 
+        sim a tag <em>nav</em>.
+    </p>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Quem somos</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <hr>
+    <h3>Artigos</h3>
+    <p>
+        A tag <strong>article </strong> funciona como um container para qualquer sessão de uma pagina, podendo estar sozinha um junta. 
+        Podendo ser um artigo individual ou blog, um comentario ou post de um forum, ou qualquer outro elemento independente. 
+        Debtri de um <strong>article</strong> podemos ter diversos itens, figuras, titulos e subtitulos, paragrafos.
+        <br> <strong>EXEMPLO</strong>
+    </p>
+    <article>
+        <figure>
+            <img src="./images/young-girl.jpg" alt="" width="200px">
+            <figcaption>Jovem menina</figcaption>
+        </figure>
+        <hgroup>
+            <h2>Lorem ipsum</h2>
+            <h3>Amet fermentum</h3>
+        </hgroup>
+        <p>
+            Elit dictum inceptos facilisis augue conubia interdum platea suscipit congue, cras donec sit ad augue habitant curabitur
+            donec, sit nulla nisi lacinia morbi donec tempor nisi. aptent himenaeos potenti luctus sodales mattis ligula tortor 
+            eleifend nullam ipsum tortor.
+        </p>
+    </article>
+    <hr>
+    <h3>Aside</h3>
+    <p>
+        A tag <strong>aside</strong> é usada com dos propósitos, quando esta dentro da teg article ou não.
+        Quando a mesma se encontra dentro da tag article, ele pode conter informações que é relatado no article, mas 
+        não essencial, como por exemplo glosário e citação. <br>
+        Quando esta fora da tag <em>article</em>, ele funciona como um container para conteudo relacionado a pagina. 
+        Como por exemplo, links de outras sessões, lista de poster recentes, box de procura, tweets recenter da pagina...
+    </p>
+    <aside>
+        <section>
+            <h1>Receitas populares</h1>
+            <a href="">Bolinho de chuva</a>
+            <a href="">Bolo de cenoura</a>
+            <a href="">Torta de frango</a>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                Na cozinha da sua casa <br>
+                Casa <br>
+                Numero seu <br>
+            </p>
+        </section>
+    </aside>
+    <hr>
+    <h2>Sessões</h2>
+    <p>
+        A tag <strong>section</strong> é usada para manter junto um conteudo, cada sessão pode haver mais de uma heading.
+        Por exemplo, em uma pagina, podemos ter varias section, cada uma contendo um conteudo diferente, tal como top produtos,
+        mais vendidos, etc. <br>
+        Não deve ser usado para substituir a div e nem estruturar uma página.
+    </p>
+    <section>
+            <h1>Receitas populares</h1>
+            <a href="">Bolinho de chuva</a>
+            <a href="">Bolo de cenoura</a>
+            <a href="">Torta de frango</a>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                Na cozinha da sua casa <br>
+                Casa <br>
+                Numero seu <br>
+            </p>
+        </section>
+
+        <hr>
+        <h2>Grupo de títulos</h2>
+        <p>
+            A tag <strong>hgroup</strong> é usada para agrupar um conjunto de titulos, desde o h1 à h6. 
+            Podendo ser usada então como um conjunto de titulo de subtitulo. Alguns desenvolvedores não gostam de utilizar
+            pois fazem o subtitulo usando a tag <em>p</em>. 
+        </p>
+        <hgroup>
+            <h2>Lorem ipsum</h2>
+            <h3>Amet fermentum</h3>
+        </hgroup>
+
+        <hr>
+        <h2>Figuras</h2>
+        <p>
+            A tag <strong>figure</strong> pode ser usada para conter qualquer conteudo que referencia o fluxo principal de um artigo, não 
+            apenas uma imagem. Logo podemos usar a tag quando temos: <em>imagens, videos, graficos, diagramas, code</em>. 
+            
+        </p>
+        <hr>
+        <h2>Linkando um bloco</h2>
+        <a href="">
+        <p>
+            Vimos até então o uso da tag <strong>a</strong> para criar links, sabemos até então que é uma tag sem fechamento.
+            Porem apartir de agora podemos ter um fechamento para a tag, e dessa maneira linkar todo um bloco de elemento.
+        </p>
+         </a>
+    </body>
+</html>

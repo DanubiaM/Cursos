@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./20.Target&Calc&Filter.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Calc & Filter</title>
+</head>
+<body>
+    <h1>Target</h1>
+    <p>
+        A pseudoclasse target serve para que se aplique uma estilização 
+        assim que o usuario clicar em algum link e esse link ser aberto.
+    </p>
+<a href="#clicme" id="log">Realizar Login</a>
+
+
+<div id="clicme" class="tela">
+    <header>
+        <a href="#">x</a>
+        <h1>LOGIN IN RASPCLUSTER</h1>
+    </header>
+    <div class="login">
+        <label for="id" >Usuario</label>
+        <input type="email"  id="id" placeholder="user@email.com">
+        <label for="senha" >Senha</label>
+        <input type="password" id="senha"  placeholder="Digite sua senha aqui">
+    </div>
+    <footer>
+        <a href="#">Esqueceu a senha? Clique aqui</a>
+    </footer>
+</div>
+<hr>
+<h1>Calc</h1>
+<p>
+    A função calc serve para realizar calculos de entre larguras e alturas.
+</p>
+<nav></nav>
+<div class="all"></div>
+
+<h1>Filter</h1>
+<p>
+    A propriedade filter permite estilizar um elemento, frequentemente uma imagem.
+    Usada da seguinte maneira: <br>
+    <em>filter: valor()</em> <br>
+    O valor pode assuimir os seguintes nomes:
+    <ul>
+        <li><em>blur()</em>: definida em px, é usada para desfocar a imagem</li>
+        <li><em>brightness()</em>:definido em %, o padrão da imagem é 100%, podendo  aumentar (maior que 100%) ou duminuir(abaixo de 100%)</li>
+        <li><em>constrast()</em>: definido em %, funciona da mesma maneira que o brightness, porem aumentando ou diminuindo o constraste </li>
+        <li><em>grayscale()</em>: definido em %, serve para adiconar uma escala de cinza na imagem, sendo 0% a escala máxima, e 100% a escala normal.</li>
+        <li><em>invert()</em>: definido em %, serve para inverter as cores, o padrão normal de cores é 0%, 100% inversão total de cores</li>
+        <li><em>opacity()</em>: definido em %, serve para definir a transparencia, 0% totalmente transparente, 100% normal.</li>
+        <li><em>saturate()</em>: definido em %, serve para aumentar a saturação, o valor padrão é 100%, para aumentar (maior que 100%) ou diminuir (abaixo de 100%) a saturação</li>
+        <li><em>sepia()</em>: definido em %, serve para dar uma cara de antiga na imagem, 0% é o padrão, 100% totalmente com o efeito.</li>
+        <li><em>hue-rotate</em>: definido em grau deg, serve para mudar as cores de acordo com o angulo, padrão é 0deg.</li>
+        <li><em>drop-shadow(0px 0px 0px color)</em>: definido em px os três primeiros parametros, o primeiro refere-se ao deslocamento horizontal, o segundo ao deslocamento vertical, o terceiro ao desfoque e o ultimo a cor.  </li>
+    </ul>
+    Podemos realizar a combinação desses valores em conjunto, basta adicionar um espaço de um valor para o outro.
+    <br>
+    <em>filter: valor() valor()</em>
+</p>
+    <img src="./images/pink-hair-1450045_1920.jpg" alt="cabelo rolsa" width="200px" height="150px">
+</body>
+</html>

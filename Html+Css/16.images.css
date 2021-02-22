@@ -1,0 +1,107 @@
+.img-large{
+    width: 500px;
+    height: 500px;
+}
+
+.img-medium{
+    width: 250px;
+    height:250px;
+
+}
+.img-small{
+    width: 100px;
+    height: 100px;
+}
+.img-align-left{
+    float:left;
+    margin-right: 10px;
+}
+.img-align-right{
+    float:right;
+    margin-left:10px;
+}
+.img-align-center{
+    display: block;
+    margin:0px auto;/* auto significa que ele vai deixar as margins no maximo possivel, dessa maneira ele centraliza a imagem*/
+}
+
+body{
+    background-image: url("./images/star-wars-backgrounds-25.jpg");
+    color:white
+}
+
+#repeat{
+    background-image: url("./images/mouse.gif");
+    background-repeat: repeat-x;
+    background-size: 150px;
+    color:#000000;
+    height: 150px;
+
+}
+
+.attachment{
+    background-image: url("./images/CoolClips_hand0257.png");
+    background-size:150px;
+    height: 150px;
+    background-attachment: fixed;
+    color:blue;
+    text-shadow:  1px 1px #000000;
+
+}
+
+.position{
+    background-image: url("./images/Imagens-de-Fumaça.png");
+    background-size:380px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.all{
+    background:url("./images/universo-png-transparente5.png") center center no-repeat fixed;
+    height: 250px;
+
+}
+
+.button{
+    height:60px;
+    background-image: url("./images/sprite.png");
+    background-size: 350px;
+    text-indent: -9999px;
+    display:inline-block;
+}
+
+#add-to-basket{
+    width:175px;
+    background-position: 0px 0px;
+}
+
+#framing-options{
+    width:175px;
+    background-position: -175px 0px;
+}
+#add-to-basket:hover{
+    background-position:0 -63px;
+}
+#framing-options:hover{
+    background-position: -175px -63px;
+}
+#add-to-basket:active{
+    background-position:0px -126px;
+}
+#framing-options:active{
+    background-position: -175px -126px;
+}
+
+/*Gradiente*/
+
+.g-linear{
+    width: 300px;
+    height: 100px;
+    background-image: linear-gradient(to bottom right, red, black, white);
+}
+.g-repeat{
+    width: 300px;
+    height: 100px;
+    background-image:repeating-linear-gradient(30deg, blue, grey, rgba(0,0,0,0.7))
+}

@@ -1,0 +1,145 @@
+@font-face{
+    font-family: warzone;
+    src:url("./fonts/warzone/WARZONE\ 99.ttf")
+}
+@font-face{
+    font-family: conforta;
+    src:url("./fonts/conforta/Comfortaa-Regular.ttf")
+}
+
+*{
+    background-color:rgb(48, 47, 46);
+    font-family: conforta;
+    color:#ffffff;
+    
+}
+
+/*Barra de navegação*/
+    /*Titulo*/
+.title{
+    font-family: warzone;
+    position: absolute;
+    top:30px;
+    left:200px;
+       background-color: transparent;
+
+}   
+#foster{
+    color:orange;
+    background-color: transparent;
+
+}
+#subtitle{
+    background-color: transparent;
+    font-size: 12px;
+}
+
+    /* itens de nav*/
+.nav-itens{
+   position: absolute;
+   top:35px;
+   left:900px;
+   background-color: transparent;
+
+   
+}   
+a{
+    text-decoration: none;
+    font-size:12px;
+    background-color: transparent;
+
+}
+
+a:hover, h2{
+    color:orange;
+}
+
+    /*header*/
+#header{
+    position: fixed;
+    background-color: rgba(36, 35, 36, 0.9);
+    width: 100%;
+    height: 100px;
+    top:0px;
+    left:0px;
+    z-index: 50;
+}
+       
+/*            Body          */
+    /*Imagem*/
+.photo{
+    position: absolute;
+    left:300px;
+    top: 50px
+}
+    /*Texto main*/
+
+.text{
+    position:absolute;
+    left:800px;
+    top:100px
+}
+.parag-text{
+    width: 300px;
+}
+.title-text{
+   position:relative;
+   right: 100px;
+}
+#data{
+    font-size: 13px;
+    
+}
+
+    /*      More articles*/
+.main-article{
+    position: relative;
+    width: 847px;
+    top: 550px;
+    left:300px;
+    border-top: 1px solid #ffffff;
+    
+    
+}
+
+#notice{
+    width: 200px;    
+
+}
+#notice p{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom:7px ;
+}
+
+.notice-2{
+   position:absolute;
+   left: 210px;
+   top:66px
+}
+.notice-3{
+    position: absolute;
+    left: 420px;
+    top:66px;
+}
+
+.notice-4{
+    position: absolute;
+    left: 640px;
+    top:66px;
+    
+}
+
+/*RODAPÉ*/
+
+.foster{
+    position:absolute;
+    top:1000px;
+    width: 100%;   
+    border-top:solid 1px white;
+    left:0px
+}
+.foster p{
+    position: absolute;
+    left: 500px;
+    padding-bottom: 10px;
+}

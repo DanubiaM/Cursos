@@ -1,0 +1,121 @@
+.ease{
+    width: 150px;
+    height: 100px;
+    background-color: #633737;
+    color:white;
+    transition-timing-function:ease;
+}
+.ease:hover{
+    width: 250px;
+    height: 100px;
+    background-color: #615a5a;
+    color:white;
+    transition-duration: 1s;
+
+}
+
+.ease-in{
+    width: 150px;
+    height: 100px;
+    background-color: #633737;
+    color:white;
+    transition-timing-function:ease-in;
+}
+.ease-in:hover{
+    width: 250px;
+    height: 100px;
+    background-color: #615a5a;
+    color:white;
+    transition-duration: 1s;
+
+    
+}
+.linear{
+    width: 150px;
+    height: 100px;
+    background-color: #633737;
+    color:white;
+    transition-timing-function:linear;
+}
+.linear:hover{
+    width: 250px;
+    height: 100px;
+    background-color: #615a5a;
+    color:white;
+    transition-duration: 1s;
+
+}
+.ease-out{
+    width: 150px;
+    height: 100px;
+    background-color: #633737;
+    color:white;
+    transition-timing-function:ease-in;
+}
+.ease-out:hover{
+    width: 250px;
+    height: 100px;
+    background-color: #615a5a;
+    color:white;
+    transition-duration: 1s;
+
+    
+}
+.ease-in-out{
+    width: 150px;
+    height: 100px;
+    background-color: #633737;
+    color:white;
+    transition-timing-function:ease-in;
+}
+.ease-in-out:hover{
+    width: 250px;
+    height: 100px;
+    background-color: #615a5a;
+    color:white;
+    transition-duration: 1s;
+
+}
+
+#div-1{
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    transition-property: width, height;
+    transition-delay:0.5s;
+    transition-duration: 2s;
+
+}
+#div-1:hover{
+    width: 300px;
+    height: 300px;
+    background-color:#3c3eb3;
+    transition-duration: 2s;
+    transition-delay:0.5s;
+
+}
+
+#div-2{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: black;
+    transition: width 1s linear 0s , height 2s linear 1s;
+}
+#div-2:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+#current{
+    background-color: #3c3eb3;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+#current button{
+    color: red;
+    border: 1px solid currentColor;
+    margin-top: 50px;
+}

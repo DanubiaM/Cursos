@@ -1,0 +1,55 @@
+/*
+*Lista
+*/
+li{
+    list-style-image: url("./images/earth.png");
+}
+/*
+*Tabela
+*/
+table{
+    background-color: rgb(202, 219, 226);
+    border-spacing: 0px;
+    width: 650px;
+    border-radius: 5px;
+
+    
+}
+.head{
+    color:white;
+    background-color:rgb(102, 175, 204);
+    border-bottom: 3px solid rgb(0, 77, 107);
+    padding: 5px;
+  
+}
+td{
+    padding: 5px;
+  
+  
+}
+.title{
+    font-weight: bold;
+}
+/*
+*Formulário
+*/
+form{
+    width: 400px;
+    padding: 10px 10px 10px 5px;
+}
+
+div{
+    padding: 6px;
+}
+
+input{
+    margin-top: 3px;   
+}   
+legend{    
+    font-style: italic;
+}
+#check{
+    float: left;
+    width: 150px;
+    text-align: left;
+}

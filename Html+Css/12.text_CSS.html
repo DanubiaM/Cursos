@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./12.text.css" type="text/css">
+    <title>Texto no CSS</title>
+</head>
+<body>
+    <h1>Controle de Texto </h1>
+    <p>
+        Pode ser dividido em dois grupos:
+        <br>
+        Aqueles que afeta diretamente a fonte e sua aparencia(typeface, bold, italic, size)
+        <br>
+        E aqueles que teria algum efeito no texto, independente da fonte ( cor, espaçamento entre as letras e palavras)
+    </p>
+    <h1>Terminologia Typeface </h1>
+    <p>
+        As seguintes famílias de fontes são comumentes usadas para as seguintes situações:
+        <br> <span id="serif"> Serif: É usada em passagens longas por serem faceis de ler. Exemplo: Georgia, Times, Times New Roman</span>
+        <br> <span id="sans"> Sans-Serif: É usada para textos pequenos. Exemplos: Arial, Verdana e Helvetica </span>.
+        <br> <span id="monospace"> Monospace: Usada em codigos por ser mais alinhada. Exemplos: Courier e Courier New</span>
+        <br> Alguns outros tipos de familia de fonte utilizadas são:
+        <br> <span id="cursive">Cursive: Caracterizada por parecer ser escrita a mão. Exemplos: Comimc Sans MS e Monotype Corsive</span>
+        <br> <span id="fantasy"> Fantasy: São fontes descorativas, frequentemente usadas em titulos. Exemplos: Impact e Haettenschweiler</span>
+    </p>
+    <p>
+        Alguns tipos de caracteristicas da fonte:
+        <dl>
+            <dt>Weight</dt>
+            <dd> 
+                <b>font-weight</b>: tem os possiveis atributos <span id="li">lighter</span>,<span id="bo">bold</span>
+                Além desses possiveis valores, podesse adicionar uma escala de 100 à 900. Essa escala condiz com o quão negrito sera.
+            </dd>
+            <dt>Style</dt>
+            <dd>
+                Diz a respeito do seus aspecto cursiva:
+                <br>
+                <b>font-style</b>: tem os possiveis atributos <span id="normal">normal</span>, <span id="italic">italic</span> e
+                <span span="oblique">oblique</span>.
+            </dd>
+            <dt>Stretch</dt>
+            <dd>
+                <b>font-stretch</b>: tem os possiveis atributos <span id="condensed">condensed</span>, <span id="regular">regular</span>
+                e <span id="extended">extended</span>.
+            </dd>
+        </dl>
+    </p>
+    <hr>
+    <h2>Font-Size</h2>
+    <p>
+        As propiedades da fonte size é para delimitar o tamanho da fonte. Pode ser especificada por <b>pixels, porcentagens e ems</b>.
+        <dl>
+            <dt>Pixels</dt>
+            <dd>Os pixeis são usados por ter um controle preciso do controle de espaço do texto,o tamanho padrão no navegador é 16px. Exemplo: font-size= 300px.</dd>
+            <dt>Porcentagens</dt>
+            <dd>O tamanho normal do navegador é 75%. Exemplo: font-size= 30%</dd>
+            <dt>Ems</dt>
+            <dd>Equivale ao tamanho a largura de uma letra m. Exemplo font-size=1.2em</dd>
+        
+        </dl>
+    </p> 
+   <h3>Tipo de escalas</h3>
+   <p>
+       Como ja apresentado, existe três tipos de escala, pixels, porcentagens e ems.
+       Entretando existe um padrão a ser usado por elas. O padrão de tamanho de texto no navegador é <i>16px</i>,
+       se for usar % ou ems deve calcular o tamanho do texto baseado no tamanho padrão usado no navegador.
+       Se usar 12px no corpo do texto, deve-se então usar 24px para títulos.
+       <br>
+       <table class="typescale">
+           12 pixels de escalada
+           <tr>
+               <th scope="row">Pixels</th>
+               <th scope="row">Porcentagens</th>
+               <th scope= "row">Ems</th>
+           </tr>
+           <tr>
+               <td>h1: 24px</td>
+               <td>h1: 200%</td>
+               <td>h1: 1.5em</td>
+           </tr>
+           <tr>
+               <td>h2: 18px</td>
+               <td>h2: 150%</td>
+               <td>h2: 1.3em%</td>
+           </tr>
+           <tr>
+               <td>h3: 14px</td>
+               <td>h3: 117%</td>
+               <td>h3: 1.17em</td>
+           </tr>
+           <tr>
+               <td>body: 12px</td>
+               <td>body: 75%</td>
+               <td>body: 100%</td>
+           </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td>p: 0.75ems</td>
+
+           
+            </tr>
+       </table>
+   </p>
+
+   <h1>Font-face</h1>
+   <p class="font-face">
+       Para usarmos fontes que <strong>não</strong> estão baixadas no computador, devemos usar o <strong>font-face</strong>.
+       Ela é composta pelas seguintes propiedades: <em>font-family(nome da fonte), src(o caminho da fonte) e format(especificado o formato)</em>.
+       <br>Sites de fontes free: <a href="https://www.fontsquirrel.com/">https://www.fontsquirrel.com/</a> e <a href="http://www.fontex.org/">http://www.fontex.org/</a>.
+       <br>Existe varios tipos de formatos de fontes aceitos pelos navegadores como: <strong>eot, woff,ttf/otf e svg</strong>.
+       Dessa mananeira, deve-se especificar diferentes caminhos dentro do <em>src</em>, para que possa utilizar varios de formatos de fonte, e 
+       aparecem em diferentes tipos de navegadores.
+
+       <br>Use o site <a href="https://www.fontsquirrel.com/tools/webfont-generator"> https://www.fontsquirrel.com/tools/webfont-gerator  </a> para gerar
+       a fonte nos formatos anteriores(woff).
+    </p>
+    <hr>
+    <h1>font-weight</h1>
+    <p class = "weight">
+        Os tipos de atributos possiveis para font weight é: <strong>normal, bold, </strong>
+    </p>
+    <hr>
+    <h1>font-style</h1>
+    <p class="italic">
+        A font-style nos permite adicionar o negrito dentro do CSS. Os possiveis valores é: <strong>normal, italique e oblique</strong>
+    </p>
+    <hr>
+    <h1>text-transform</h1>
+    <p>
+        Podemos transformar uma fonte em maisucula utilizando a propiedade <b>text-transform</b>.
+        Ela pode conter os seguintes valores: <b> <span id="upper">uppercase</span> ,<span id="lower">lowercase</span>  e <span id="cap">capitalize</span> </b>.
+
+    </p>
+    <hr>
+    <h1>text-decoration</h1>
+    <p>
+        Para poder decorar o texto existe o <b>text-decoration</b>.
+        Ele possui os seguintes valores de atribuos: <span id="none">none</span>, <span id="under">underline</span>, <span id="over">overline</span>
+        <span id="line">line-through</span>, <span id="bilink"> blink</span>
+    </p>
+    <hr>
+    <h1>Espaçamento das linhas</h1>
+    <p>
+        Para fazermos um espaçamento das linhas devemos utilizar a propiedade <b>line-height</b>, essa propiedade
+        vai alterar a altura da linha. Então nela deve conter os valores em numeros como em. Um bom valor é 1.4 em ou 1.5 em.
+
+    </p>
+    <hr>
+    <h1>Espaçamento entre letras e palavras</h1>
+    <p>
+        Para fazer espaçamento entre as letras basta que use a propiedade <b>letter-spacing</b>  e o valor em "em". 
+        <br> <span id="word">Já para fazer um espaçamento de palavras use-se <strong>word-spacing</strong></span>. 
+        Normalmente o espaçamento entre as palavras é de 0.25em
+    </p>
+    <hr>
+    <h1>Alinhamento de texto</h1>
+    <p>
+        Você pode fazer o alinhamento do texto no CSS,  para isso basta usar a propiedade <strong>text-align</strong>. 
+        Ela possui os seguintes valores possiveis: <em>left, right, center, justify</em>. O mais utilizado é o alinhamento left.
+    </p>
+    <hr>
+    <h1>Alinhamento Vertical</h1>
+    <p>
+        O <strong>vertical-align</strong> é utilizado para realizar o alinhamento vertical de tags como <em>img, em e strong</em>. 
+        Além disso, pode-ser usado para fazer alinhamentos de células de uma tabela também. Ele <b>não deve</b> ser usado
+        para fazer alinhamento de div e p. <br>
+        Seus possiveis valores são: <strong><em>baseline, sub, super, top, text-top, middle, bottom e text-bottom</em></strong>.
+        Além desses valores, também pode-se definir o tamanho do deslocamento vertical usando <b>px ou %</b>.
+
+        <br>
+        Usando a baseline <img id ="young1" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br> Usando a sub <img id ="young2" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br>Usando a super <img id ="young3" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br> Usando a top <img id ="young4" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br>Usando a text-top <img id ="young5" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br> Usando a middle <img id ="young6" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br>Usando a bottom <img id ="young7" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.
+        <br> Usando a text-bottom <img id ="young8" src="./images/young-girl.jpg" width="100" height="50"> temos esse efeito.  
+    </p>
+    <hr>
+    <h1>Identamento de Texto</h1>
+        <h2 id="indent">text-indent</h2>
+        <p>
+            O identamento de texto é uma propiedade a ser colocada na primeira linha do paragrafo.
+            <br>Normalmente o deslocamento é feito em px, sendo positivo para a direita, e caso deseje um deslocamento para a esquerda,
+            basta fazer um deslocammento negativo.
+        </p>
+        <p id="indent2">
+            by: Danubia M
+        </p>
+     <hr>
+     <h1> Sombra Projetada</h1>   
+        <h2 id="sombra">text-shadow</h2>
+        <p>
+            Podemos fazer um uma sobra nos textos que escrevemos, entretando alguns navegadores não suportam essa tecnologia.
+            <br>Existe quatro valores a serem especificados no texto-shadow. 
+            <ol class="lista">
+                <li>O primeiro valor a ser especificado indica o quo longe deve ir a sombra, para direita ou esquerda, sendo especificado em <b>px</b>.</li>
+                <li>O segundo valor indica a distancia que a sombra deve ir para cima ou para baixo. Também especificado em 
+                    <b>px</b>
+                </li>
+                <li>
+                    O terceiro valor é opcional, serve para dizer o desfoque da sombra. Também dado em <b>px</b>.
+                </li>
+                <li>
+                    O ultimo valor é a cor da sombra.
+                </li>
+            </ol>
+        </p>
+        <hr>
+        <h1>Primeira Letra ou linha</h1>
+            <h2>:first-letter e :fisrt-line</h2>
+            <p>
+                Agora não trataremos mais sobre as propiedades e sim sobre <b>pseudo-elementos</b>. 
+                Podemos especificar um pseudo-elemento dentro do seletor "h1 :first-letter{ propriedades}". 
+                <br>A <b>:first-letter</b> serve para realizar a ação na primeira letra, já o <b>first-line</b> a ação é feita na primeira linha.
+            </p>
+        <hr>
+        <h1>Pseudo-classes</h1>
+        <h2>Estilo de Links</h2>
+        <h3>:link e :visited</h3>
+        <p>
+            Esses elementos são chamados de pseudo-classes. Quando se trata de interação entre links usamos o <b>:link</b>
+            e <b>:visited</b>. O <b>:link</b> apresenta <em>estilos</em> para links que não foram visitados.
+            Já o <b>:visited</b> apresenta estilos para sites que <em>ja foram visitados</em>.
+            <br>
+            CSS:
+            <ol class="sites">
+                <li><a href="./04.images.html">Imagens</a></li>
+                <li><a href="./02.list.html">Listas</a></li>
+                <li><a href="./05.table.html">Tabelas</a></li>
+                <li><a href="./06.forms.html">Formularios</a></li>
+                <li><a href="./07.buttons.html">Botões</a></li>
+            </ol>     
+        </p>
+
+        <h2>Respondendo aos usuarios</h2>
+        <h3>:hover, :active e :focus</h3>
+        <p>
+            Esse tipo de pseudo-classe é feito para realizar interação com o usuario. <br>
+            O <strong>:hover</strong> aplicado quando o <em>usuario passa por cima com o mouse</em> de um elemento. <br>
+            O <strong>:active</strong> a ação é realizada quando o usuario <em>clica em cima do elemento</em>. <br>
+            O <strong>:focus</strong> é usado quando deseja <em>dar um foco</em> em um elemento que o usuario esta usando, como
+            uma caixa de entrada. Dessa maneira ira realizar uma ação no elemento que o usuario esta usando.
+            <hr>
+            Clique e passe o mouse nos campos abaixo: <br>
+            <input type="text" name="texto" id="text"> 
+            <button type="submit" id="enviar">Enviar</button>
+        </p>
+</body>
+</html>

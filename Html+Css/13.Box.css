@@ -1,0 +1,256 @@
+.box-1{
+    height: 300px;
+    width: 300px;
+    background-color: #1b1a1a;
+}
+
+#dimensao{
+    font-size: 75%;
+    color: white;
+    background-color: rgb(105, 105, 105);
+}
+
+.box-2{
+    max-width: 500px;
+    min-width: 600px;
+}
+
+#height, #box-height{
+    width: 400px;
+    font-size: 90%;
+    line-height: 1.2em;
+}
+
+#box-height{
+    min-height: 10px;
+    max-height: 25px;
+    background-color: #464545;
+
+}
+
+#box-height:active{
+    overflow: scroll; /*pode usar o hidden tbm, porem ele esconde o conteudo*/
+    color:red;
+    max-height: 70px;
+    min-height: 50px;
+    max-width: 300px;
+}
+
+#aviso{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+
+}
+/* border-width*/
+
+p.borda{
+    border-width: 2px 1px 5px 2px;
+    max-width: 500px;
+    border-style: solid; /* sem definir o estilo da borda não funciona */
+}
+ol#lista{
+    border-style: solid;
+    border-right-width: 1px;
+    border-top-width: 3px;
+    border-bottom-width: 1px;
+    border-left-width: 5px;
+    border-color: #464545;
+    max-width: 500px;
+}
+
+/*border-style*/
+
+.solid{
+    border-style: solid;
+}
+
+.dotted{
+    border-style: dotted;   
+  
+}
+.dashed{
+    border-style:dashed;
+}
+
+.double{
+    border-style: double;
+}
+
+.groove{
+    border-style:groove;
+}
+
+.ridge{
+    border-style:ridge;
+}
+
+.inset{
+    border-style:inset;
+}
+
+.outset{
+    border-style:outset;
+}
+
+.individual{
+    border-bottom-style: inset;
+    border-left-style: ridge;
+    border-right-style: groove;
+}
+/*border-color*/
+
+.color{
+    border-color: rgb(0, 0, 0) rgb(114, 77, 77) rgb(241, 0, 0) rgb(128, 119, 119);
+    border-style: groove ;
+}
+
+.tudo{
+    border: 5px inset rgb(148, 146, 146) ;
+}
+
+/*padding*/
+
+.padding{
+    padding: 20px;
+    border: 2px ridge;
+    max-width: 800px;
+}
+
+/*margin*/
+
+.marg1{
+    width: 300px;
+    border: 1px solid;
+    margin: 2px 2px 2px 2px;
+    padding:10px;
+}
+
+.marg2{
+    width: 300px;
+    border: 2px solid;
+    margin-right: 2px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 10px;
+}
+
+/*auto centering*/
+
+.center{
+
+    border: 2px solid;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    width: 600px;
+    height: 50px;
+    
+}
+/*Display*/
+
+.inline{
+    display: inline; /* Não é possivel altetar a largura e altura*/
+    margin-right: 10px;
+}
+
+.block{
+    display: block;
+    
+}
+
+.inline-b{
+    display:inline-block;
+    width: 100px;
+    background-color: red;
+   text-align: center;
+}
+
+
+/*Visibility*/
+
+.inline-v{
+    display:inline-block;
+    width: 100px;
+    background-color: red;
+   text-align: center;
+
+}
+
+.inline-h{
+    display:inline-block;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    visibility: hidden;
+}
+ /*border-image*/
+
+ .one{    
+    border: 10px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url(images/border.png) 27 stretch;
+ }
+
+ .repeat{    
+    border: 10px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url(images/border.png) 27 repeat;
+ }
+
+ .tree{    
+    border: 27px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url(images/border.png) 54 round;
+ }
+
+ /*box shadow*/
+ .box-shadow{
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 7px blue;
+
+ }
+
+ /*border-radius*/
+
+ #btn-enviar{
+    padding: 10px;
+    border-radius: 5px;
+ }
+#text-area{
+
+    border-radius: 3px 20px 20px 3px;
+
+}
+
+.ex1{
+    border-top-left-radius: 80px 50px;
+    border-color: #ff009d;
+    border-style: solid;
+    width: 150px;
+    height: 100px;
+
+}
+
+.ex2{
+    border-color: #ff009d;
+    border-style: solid;
+    width: 150px;
+    height: 100px;
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+
+.ex3{
+    border-color: #ff009d;
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+
+}

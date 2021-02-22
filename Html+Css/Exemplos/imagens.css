@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/background-rosas.jpg");
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(49, 73, 0);   
+
+}
+
+/*                 HEADER                  */
+
+.logo img{   
+    margin: 10px 200px 0px 500px;
+    background-image: none;
+
+}
+
+#title h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(194, 20, 126);
+    background-image: none;   
+    border-bottom: 2px double rgb(138, 11, 88);
+    margin: 0px 200px 0px 600px;
+    width: 300px;    
+    padding:0;
+    border-radius: 10px;
+    
+}
+
+#title p{
+    background-image: none;
+    margin:20px 200px 10px 480px;
+
+
+}
+
+.img-medium{
+    width: 250px;
+    height: 180px;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    margin-left: 350px;
+    
+}
+
+.flower{
+    background-color:rgb(218, 175, 194);
+    background-image: none;
+    width: 250px;
+    height:200px;
+    margin: 5px;
+    border:solid 10px rgb(218, 175, 194);
+    padding: 0;
+     
+}
+
+figcaption{
+    background-color: rgb(218, 175, 194);
+    background-image: none;
+    text-align: center;
+    height:20px;
+  
+
+}
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="15.Layout.css" type="text/css" href="./15-CSS-960_12_col.css">
+    <title>Layout</title>
+</head>
+<body>
+    <h1> Construindo Blocos</h1>
+    <p >
+        O CSS trata os elemetos em HTMl como se fosse um unico box. Esses boxs podem ser <strong>block-level</strong>
+        ou um <strong>inline box</strong>. Um <em>block-level</em> funciona como um construtor de blocos, como por exemplo
+        <em>h1, p, ul, li, div</em>. Já o <em>inline</em> funciona ao lado dos textos do bloco, como por exemplo
+        <em>img, b, i, strong, em</em>.
+        <br>Se um <strong>block-level</strong> contem dentro dele um outro block-level, então eles serão <em>parentes</em>,
+        isso acontece comumente quando utilizamos <strong>div</strong>. 
+    </p>
+    <hr>
+    <h1>Controlando a posição dos elementos</h1>
+    <p>
+        No CSS utiliza-se o controle de posição para controlar o layout de uma pagina. Ela pode conter os seguintes valores:
+        <em>normal flow, relative posição e  absolute posição</em>. Para isto, basta que se especifique o valor da propriedade 
+        <strong>position</strong>
+
+        <dl>
+            <dt>Normal Flow</dt>
+            <dd>O padrão normal de paragrafo</dd>
+            <dt>Relative positioning</dt>
+            <dd>Move o elemento para uma posição especifica, como top, right, bottom e left. Ele não afeta os demais elementos.</dd>
+            <dt>Absolute positioning</dt>
+            <dd>Posiciona o elemento em relaçao ao conteudo do elemento. Não afeta a posição de qualquer elemento envolta dele.
+                Posiciona o elemento para se mover junto com o scroll do mouse.
+            </dd>
+            <dt>Fixed positioning</dt>
+            <dd>É uma forma de posicionamento absoluta sobre a janela do navegador. Não se move quando o usuario meche o scroll do mouse e nem afeta outros elementos.</dd>
+            <dt>Floating elements</dt>
+            <dd>Aceita colocar um elemento do normal flow e posicionar à direita ou esquerda do box.</dd>
+        </dl>
+    </p>
+    <h2 class="flow"> Normal Flow</h2>
+    <p class="p-flow">
+        No normal flow,cada elemento do block-level fica encima do proximo. Ele é o caminho padrão que o navegador trata os elementos
+        Mas ainda sim podermos definir sua sintaxe como <strong>position:static</strong>
+    </p>
+    <hr>
+    <h2>Relative positioning</h2>
+    <p>
+        A posição relativa move os elementos em relação aonde estaria o normal flow. A partir do momento que utilizamos essa propriedade
+        podemos mover o objeto para varias direções, usando as propriedades <strong>left, top, bottom, right</strong> e especificando o valor em px.
+    </p>
+    <p class="p-relative">Indicamos seu uso utilizando o <strong>position:relative</strong>(aqui estou utilizando além da relative positioning o top e left.)</p>
+    <hr>
+    <h2 class="absolute">Absolute positioning</h2>
+    <p class="p-absolute">
+        A utilizarmos a posição absoluta o texto sera retirado do normal flow(padrão) e não afetara a posição dos demais elementos.
+        Apartir de então podemos move-lo utilizando as propriedades <strong>left, top, bottom, right</strong> e especificando o valor em px.
+    </p>
+    <hr>
+    <h2>Fixed positioning</h2>
+    <p>
+        Utilizando a propriedade <strong>position:fixed</strong> temos então um elemento <em>fixado</em> na janala do navegador.
+        Isso quer dizer que, mesmo o usuario movento a tela. Observe o gato  
+        <img src="./images/5efc731f49df30021361b9cfaaef28b2.gif" alt="cat" class="fixed">
+    </p>
+    <hr>
+    <h2>Sobreposição de elementos</h2>
+    <h3 class="index">z-index</h3>
+    <p>
+        O <strong>z-index</strong> funciona como um empilhamento, como por exemplo na area de design, quando vamos utilizar camadas
+        podemos <em>trazer para frente</em> ou <em>trazer para tras</em>. O seu valor pode ser <strong>numeros</strong>, sendo positivo para frente do elemento e
+        negativo para baixo do elemento. O valor deste <em>numero</em> depende de outros valores que tenha utilizando o z-index, se possuir um elemento utilizando z-index:1 e
+        querer que tenha outro elemento sobreposto a ele basta que esse <em>novo</em> elemento possua z-index:2. 
+    </p>
+    <hr>
+    <h2>Flutuando elementos</h2>
+    <h3>float</h3>
+    <p>
+        A propriedade <strong>float</strong> realiza uma flutuação do elemento para a direção especificada, que corresponde ao seu valor,
+        <em>left, top, bottom, right</em>. Todos os elementos que estão contidos dentro do box também são deslocados juntos.
+        Podemos utilizar essa propriedade, por exemplo em um blockquote, deslocando-o para a direita. 
+        <blockquote>
+            "Life is like riding a bicycle.
+            To keep your balance you must keep moving." -
+            Albert Einstein.
+        </blockquote>
+    </p>
+    <br><br><br>
+    <h3>Usando elementos lado a lado</h3>
+    <p class="float">
+        Pode-se utilizar o <strong>float</strong> para colocar elementos lado a lado, apenas espeficicando os valores.
+    </p>
+    <p class="float">
+        Class nisl curabitur aptent sed porta nunc quisque himenaeos etiam, accumsan adipiscing cras tempus vel curae sapien 
+        aenean, suscipit himenaeos nostra curae felis donec risus platea.
+    </p>
+    <p class="float">
+        vel metus consectetur morbi class tempus scelerisque felis sociosqu quis class, donec primis nibh eros posuere facilisis 
+        dictumst semper maecenas nisl, laoreet sagittis lobortis commodo eget euismod ac primis porta
+    </p>
+    <br><br><br><br><br><br><br><br><br>
+    <h3>clear</h3>
+    <p class="p-clear">
+        A propriedade <strong>clear</strong> deixa dizer em qual lado do box não pode ser tocado.
+        Seus valores são: <em>left(não pode relar no lado esquerdo), right(não pode relar no lado esquerdo), both(nenhum dos lados 
+        direitos e esquerdo vão relar), none(nenhum elemento deve relar em nenhum lado)</em>
+    </p>
+    <p class="p-clear">
+        Nesta situação, este exemplo, estou utilizando o valor do float como boath. Desta maneira ele não aceita que tenha algo envolta 
+        do elemento nos dois lados.
+    </p>
+    <p class="p-clear">
+        Commodo etiam ultrices nostra accumsan aliquet imperdiet tempor luctus, litora nibh eleifend urna varius sed viverra, egestas
+        platea odio nunc sollicitudin lobortis potenti. elementum platea dui placerat est duis cursus nunc eros lobortis, euismod netus]
+        praesent auctor nulla tellus sollicitudin et nec, tortor sollicitudin litora aenean ante ut per ut. 
+    </p>
+    
+    <h3>Pais de elemenetos flutuantes: PROBLEMA</h3>
+   
+    <div id="problem">
+        <p class="float">
+            Se o conteudo de um elemento conter apenas elementos floats, o navegador tratara isto como se fosse 0 pixels nas laterais e bottom.
+            Além disto, não trata a borda como 1px, como solicitado no CSS. Diante disto, é necessario utilizar outras propriedades do CSS para 
+            que assim, possamos fazer aparecer de fato as bordas. 
+        </p>
+
+        <p class="float">
+            Class nisl curabitur aptent sed porta nunc quisque himenaeos etiam, accumsan adipiscing cras tempus vel curae sapien 
+            aenean, suscipit himenaeos nostra curae felis donec risus platea.    
+        </p>
+
+        <p class="float">
+            Commodo etiam ultrices nostra accumsan aliquet imperdiet tempor luctus, litora nibh eleifend urna varius sed viverra, egestas
+            platea odio nunc sollicitudin lobortis potenti. elementum platea dui placerat est duis cursus nunc eros lobortis, euismod netus
+            praesent auctor nulla tellus sollicitudin et nec, tortor sollicitudin litora aenean ante ut per ut.     
+        </p>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>Pais de elemenetos flutuantes: SOLUÇÃO</h3>
+    <div id="solution">
+        <p class="float">
+            Para resolvermos o problema anterior, basta que utilizemos a propriedade <strong>overflow</strong> com o valor auto, e a propriedade
+            <strong>width</strong> com o valor 100%.
+        </p>
+        <p class="float">
+            Class nisl curabitur aptent sed porta nunc quisque himenaeos etiam, accumsan adipiscing cras tempus vel curae sapien 
+            aenean, suscipit himenaeos nostra curae felis donec risus platea.    
+        </p>
+
+        <p class="float">
+            Commodo etiam ultrices nostra accumsan aliquet imperdiet tempor luctus, litora nibh eleifend urna varius sed viverra, egestas
+            platea odio nunc sollicitudin lobortis potenti. elementum platea dui placerat est duis cursus nunc eros lobortis, euismod netus
+            praesent auctor nulla tellus sollicitudin et nec, tortor sollicitudin litora aenean ante ut per ut.     
+        </p>
+
+    </div>
+    <hr>
+    <h2>Criando layout de multi colunas com float</h2>
+    <div id="div-max">
+        <div class="col-1">
+            <p>
+                Para criarmos um layout de multiplas colunas utilizando o float, devemos criar uma <em>div</em> para cada coluna.
+                Desta maneira no CSS, podemos especificar o valor da largura(<em>width</em>), float e margin. 
+                Dessa maneira construimos assim varias colunas paralelas umas a outra.
+            </p>
+            <p>
+                Lembrando que não é necessário que os elementos contidos dentro da div seja flutuante. Apenas a div sera flutuante.
+                Dentro de cada div, podemos ter titulos, paragrafos e imagens diferentes. Como a imagem abaixo.
+                <br>
+                <img src="./images/piano1.jpg" alt="piano preto e branco" width="200px">
+            
+            </p>     
+        </div>
+        <div class="col-3">
+            <p>
+                Commodo etiam ultrices nostra accumsan aliquet imperdiet tempor luctus, litora nibh eleifend urna varius sed viverra, egestas
+                platea odio nunc sollicitudin lobortis potenti. elementum platea dui placerat est duis cursus nunc eros lobortis, euismod netus
+                praesent auctor nulla tellus sollicitudin et nec, tortor sollicitudin litora aenean ante ut per ut.     
+            </p>
+        </div>
+        <div class="col-2">
+            <h4>Artigos recentes</h4>
+                <ul>
+                    <li><a href="./02.list.html">Listas</a></li>
+                    <li><a href="./03.links.html">Links</a></li>
+                    <li><a href="./04.images.html">Imagens</a></li>
+                    <li><a href="./05.table.html">Tabelas</a></li>
+                </ul>
+        </div>
+    </div>
+    <hr>
+    
+    <h1>Tipos de Layout</h1>
+    <p>
+        Por causa da variação do tamanhos das telas, frequentemente designers utilizam o tamanho de 960-1000px.
+        Eiste dois tipos de largura de layout: <strong>fixed e liquid</strong>.
+    </p>
+    <h2>Layoutes de largura fixada</h2>
+    <p>
+        Este tipo de layout não muda de tamanho se o usuario aumenta ou diminiu a tela. As medidas tendem a ser dadas em pixels.
+        Sendo assim, para criarmos esse layout a largura dos boxes devem ser especificados em pixels.  
+    </p>
+    <div id="fixed">
+        <div id="header-f">
+            <h1>Logo</h1>
+            <div id="nav-f">
+                <ul>
+                    <li class="layout"><a href="">Home</a></li>
+                    <li class="layout"><a href="">Produtos</a></li>
+                    <li class="layout"><a href="">Serviços</a></li>
+                    <li class="layout"><a href="">Sobre</a></li>
+                    <li class="layout"><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div id="content-f">
+                <div id="feature-f">
+                    <p>Feature</p>
+                </div>
+                <div class="article-col1-f">
+                    <p>Coluna um</p>
+                </div>
+                <div class="article-col2-f">
+                    <p>Coluna dois</p>
+                </div>
+                <div class="article-col3-f">
+                    <p>Coluna três</p>
+                </div>
+            </div>
+            <div id="footer-f">
+                <p>&copy: Copyright Danubia M - 2021</p>
+
+            </div>
+        </div>
+    </div>
+    <h2>Layout liquido</h2>
+    <p>
+        Este tipo de layout é especificado em porcentagens, desde a largura  e altura de cada box.
+    </p>
+    <div id="liquid">
+        <div id="logo">
+            <h1>Logo</h1>   
+        </div>
+        <div id="nav-l">
+            <ul>
+                <li class="layout-l"><a href="">Home</a></li>
+                <li class="layout-l"><a href="">Produtos</a></li>
+                <li class="layout-l"><a href="">Serviços</a></li>
+                <li class="layout-l"><a href="">Sobre</a></li>
+                <li class="layout-l"><a href="">Contato</a></li>
+            </ul>
+        </div>
+        <div id="content-l">
+            <div id="feature-l">
+                Feature
+            </div>
+            <div class="article-col1-l">Coluna um</div>
+            <div class="article-col2-l">Coluna dois</div>
+            <div class="article-col2-l">Coluna três</div>
+        </div>
+        <div id="footer-l">
+            &copy: Copyright  Danubia M. - 2021
+        </div>
+
+
+    </div>
+
+    <h2>Layout em Grids</h2>
+    <p>
+        Esse tipo de layout é frequentemente utilizado por designers. A cada possui 960 pixels. Podemos ver sua aplicação
+        em site de noticias, ou algum q contenha bastante informação. 
+        <br>Existe varios tipo de grids as com 960 pixels de largura e com 12 colunas, 16 colunas, ou menos como 8 ou 4, dependendo
+        do tipo de dispositivo de ira ser utilizado. No tipo de grid com <strong>12 colunas</strong> nos temos que, cada coluna
+        possui uma margem de <em>10 pixels</em>, o vão entre elas é de <em> 20 pixels</em> e <em>10 pixels</em> da esquerda e titulo da página.
+    </p>
+    <h3>Framework: 960.gs Grid</h3>
+    <p>
+        É um dos frameworks mais utilizados para criação de layouts de paginas. É utilizado uma nomeoclatura de classes para cada coluna.
+        Utilizando um layout de 960pixels, temos 12 colunas, logo cada uma das colunas deve ter seu nome em uma classe, por exemplo container_1. 
+        E cada bloco contido na coluna deve ter o nome de grid_3 por exemplo.
+    </p>
+    <h1>Multiplos stylesheet</h1>
+    <p>
+        Utilizamos essa propriedade para podermos importar paginas diferentes do CSS, por exemplo podemos ter um CSS para o layout em uma pagina
+        e o CSS para a barra de navegação em outra. Existe dois caminhos para isto, utilizando o <strong>@import no CSS</strong> ou <strong>link no HTML</strong>
+    </p>
+    <h2>@import</h2>
+    <p>
+        Para utilizarmos essa propriedade basta que no inicio do documento CSS, utilizemos a seguinte propriedade <strong>@import url("endereço.css")</strong>. 
+        Dessa maneira podemos importar varios documentos CSS.
+
+    </p>
+    <h2>link</h2>
+    <p>
+        Para criarmos vairos stylesheet utilizando o link basta que adicionamos varios links do documento css, da mesma maneira que é feito com um unico documento CSS. 
+        Exemplo: <strong>link rel="stylesheet" type="text/css" href="css/cite.css</strong> e <strong>link rel="stylesheet" type="text/css" href="css/layout.css</strong>
+        É importante notar que a primeira que a regra do primeiro documento CSS vai valer primeiro, pois vem antes do proximo documento.
+    </p>
+
+</body>
+</html>

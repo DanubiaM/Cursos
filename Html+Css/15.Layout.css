@@ -1,0 +1,158 @@
+.flow{
+    background-color: #efefef;
+    padding: 10px;
+}
+
+.p-flow{
+    width: 450px;
+}
+
+.p-relative{
+   position:relative;
+    top:10px;
+    left:100px;
+}
+
+.absolute{
+    position: absolute;
+    top:830px;
+    left: 500px;
+    width: 250px;
+}
+.p-absolute{
+    width: 400px;
+}
+.fixed{
+    position: fixed;
+    width: 100px;
+    top: 10px;
+    left: 1300px
+}
+
+.index{
+     position: absolute;
+     z-index: 1;
+     top:1175px;
+     color:red;
+ }
+
+blockquote{
+     float: right;
+     width: 400px;
+     font-family: cursive;
+     color:#173801;
+     border: solid;
+     border-width: 1px 0px 1px 0px;
+     
+ }
+
+ .float{
+     width: 400px;
+     float: left;
+     
+ }
+
+ .p-clear{
+     float: both;
+     width: 400px;
+ }
+ 
+
+ #problem{
+    border: 1px solid #173801;
+ }
+
+ #solution{
+    border: 1px solid #173801;
+    width: 100%;
+    overflow: auto; /*adiciona barra de rolagem(scroll) somente quando necessário*/
+
+ }
+
+ /*Layout com colunas*/
+ .col-1, .col-3{
+     float: left;
+     width: 500px;
+     margin:10px;
+    
+ }
+ .col-2{
+    float: left;
+    width: 200px;
+    margin:30px;
+}
+#div-max{
+    width: 100%;
+    overflow: auto;
+}
+
+/*Tipos de Layout*/
+
+#fixed{
+    width: 967px;
+    margin: 0 auto; /*o auto colocara no centro da largura especificada*/
+    text-align: center;
+    color:#173801
+}
+
+#content-f{
+    overflow:auto;
+    height: 100%;
+}
+#nav-f, #feature-f, #footer-f{
+    background-color: #efefef;
+    padding: 10px;
+    margin:10px;
+}
+.article-col1-f, .article-col2-f, .article-col3-f{
+    background-color: #efefef;
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.layout{
+    display: inline;
+    padding: 5px;
+}
+
+/*Liquid*/
+#liquid{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content-l{
+    overflow: auto;
+}
+#nav-l, #feature-l, #footer-l{    
+    margin: 1%;
+}
+.article-col1-l, .article-col2-l, .article-col3-l{
+    background-color: #efefef;
+    width: 31.3%;
+    float:left;
+    margin:1%;    
+    height: 10em;
+
+}
+.article-col3-l{
+    margin-right: 0%;
+}
+
+.layout-l{
+    display:inline;
+    padding: 0.5em;
+}
+
+#nav-l, #footer-l{
+    background-color: #efefef;
+    padding: 0.5em 0;
+}
+
+#feature-l{
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+}

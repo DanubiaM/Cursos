@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./14.lists_tables_forms.css" type="text/css">
+    <title>Lista, tabelas e formulários</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Estilizando os marcadores da lista</h2>
+    <h3>list-style-type</h3>
+    <p>
+        Utilizamos essa propriedade para mudar os marcadores das listas, seja ela ul, ol ou li. 
+        Para listas não ordernadas usamos as seguintes propriedades:
+        <ul class="unordered">
+            <li><strong>none</strong>: nenhum marcador</li>
+            <li><strong>disc</strong>: marcador em bolinha</li>
+            <li><strong>circle</strong>: marcador em circulo</li>
+            <li><strong>square</strong>: marcador em um quadrado preto</li>
+        </ul>
+        <br>Para listas ordernadas, temos as seguintes propriedades:
+       <ol class="ordered">
+           <li><strong>decimal</strong>: 1, 2, 3...</li>
+           <li><strong>decimal</strong>: 01, 02, 03...</li>
+           <li><strong>lower-alpha</strong>: a, b, c ...</li>
+           <li><strong>upper-alpha</strong>: A, B, C ...</li> 
+           <li><strong>lower-roman</strong>: i, ii, iii...</li>
+           <li><strong>upper-roman</strong>: I, II, III...</li>
+       </ol>
+    </p>
+    <h3>list-style-image</h3>
+    <p>
+        É possivel criar marcadores utilizando imagens usando a propriedade <strong>list-style-image</strong>.
+        Para isso basta que adicionamos o valor <em>url()</em> e dentro dele o caminho da imagem.
+        Pode ser utilizado em listas do tipo ul e ol. 
+        <ul class="livros">
+            <li>Conspiracy 365</li>
+            <li>A marca de uma lágrima</li>
+            <li>Diario de uma paixão</li>
+            <li>Um amor para recordar</li>
+        </ul>
+    </p>
+    <h3>list-style-position</h3>
+    <p>
+        A posição do marcador em uma lista pode ser dentro do texto ou fora, sendo assim, existe dois possiveis
+        valores para essa propriedade, o <em>outside</em> e <em>inside</em>. A <em>outside</em>  é por padrão
+        já feita automaticamente ao criar uma lista, ou seja é a o marcador do lado de fora. Já o <em>inside</em>
+        adiciona o marcador junto ao texto, como se fizesse parte da linha.
+        <ul class="filmes">
+            <li>Harry Potter <br>J. K. ROWLING</li>
+            <li>Animais fantasticos <br>J. K. ROWLING</li>
+            <li>Vingadores <br>Marvel Studios</li>
+            <li>Minions <br>Illumination Entertainment</li>
+        </ul>
+    </p>
+    <h3>list-style</h3>
+    <p>
+        Como diversas propriedades do CSS, é possivel apreviar os comandos vistos anteriormente.
+        <ul class="series">
+            <li>The 100 <br>The CW Television Network</li>
+            <li>The rain <br>Netflix</li>
+            <li>Stranger Things <br>Matt Duffer, Ross Duffer</li>
+            <li>Game of Thrones <br>George R. R. Martin</li>
+        </ul>
+    </p>
+    <hr>
+    <h1>Propriedadades de Tabelas</h1>
+    <p>
+        Já conhecendo agora diversas propriedades do CSS, podemos então estilizar uma tabela utilizando
+        as propriedades:
+        <em>
+            width, padding, text-transform, letter-spacing, font-size, border-top, border-bottom 
+            text-align, background-color e :hover.
+        </em>
+        <h2>Filmes Lançamentos</h2>
+        <table>
+            <tr >
+                <td id="line-properties">Autor</td>
+                <td id="line-properties">Titulo</td>
+                <td id="line-properties">Preço da reserva</td>
+                <td id="line-properties">Valor a vista</td>
+            </tr>
+            <tr>
+                <td id="line-author">Beyoncé</td>
+                <td>Black is King</td>
+                <td id="right">R$50</td>
+                <td id="right">R$65</td>
+            </tr>
+            <tr class="color">
+                <td id="line-author">Kenneth Branagh</td>
+                <td>Artemis Fowl</td>
+                <td id="right">R$25</td>
+                <td id="right">R$40</td>
+            </tr>
+            <tr>
+                <td id="line-author">Gavin O'Connor</td>
+                <td>The Way Back</td>
+                <td id="right"></td>
+                <td id="right">R$35</td>
+            </tr>
+            <tr class="color">
+                <td id="line-author">Tate Taylor</td>
+                <td>AVA</td>
+                <td id="right"></td>
+                <td id="right">R$90</td>
+            </tr>
+        </table>
+    </p>
+    <h2>empty-cells</h2>
+    <p>
+        Quando temos uma célula vazia, podemos adicionar uma borda utilizando a propriedades <em>empty-cells</em>. 
+        Essa propriedade possui três valores possiveis, <em>show (para exibir), hide(esconder), inherent(se tiver tabelas dentro da outra, ira seguir as regras)</em>
+    
+        <table id="empty">
+            <tr>
+                <td class="show">0</td>
+                <td class="show">1</td>
+            </tr>
+            <tr>
+                <td class="show">2</td>
+                <td class="show"></td>
+            </tr>
+        </table>
+    
+    </p>
+    <h3>border-spacing & border-collapse</h3>
+    <p>
+        Podemos adicionar ou remover um espaçamento entre as células de uma tabela utilziando as propriedades border-spacing e border-collapse. 
+        Por padrão, ao criar uma tabela, existe um pequeno vão entre as células, porem podemos aumentar ou diminuir este vão.
+        Para aumentar utiliza os o <strong>border-spacing</strong>, sendo especificado o valor do vao em pixels.
+        Já para retirar o vão utiliza-se o <strong>border-collapse</strong>, definindo seu valor como collapse;
+   
+        <table id="spacing">
+            <tr>
+                <td class="spa">0</td>
+                <td class="spa">1</td>
+            </tr>
+            <tr>
+                <td class="spa">2</td>
+                <td class="spa"></td>
+            </tr>
+        </table>
+        <table id="collapse">
+            <tr>
+                <td class="spa">0</td>
+                <td class="spa">1</td>
+            </tr>
+            <tr>
+                <td class="spa">2</td>
+                <td class="spa"></td>
+            </tr>
+        </table>
+        
+    </p>
+    <hr>
+    <h1>Formulários</h1>
+    <h2>Estilizando formulários</h2>
+    <h3>Estilizando entradas de texto</h3>
+    <p>
+        Podemos utilziar algumas propriedades para realizar a estilização como: <em>font-size, color, 
+        background-color, border, border-radius, :hoves, :focus e backgroung-image</em>
+        <br>
+        <ul >
+            <li id="block"><input class="entrada1"type="text"></li>
+            <li id="block" ><input class="entrada2" type="text"></li>
+            <li id="block"><input class="entrada3" type="text"></li>
+        </ul>
+        
+    </p>
+    <h3>Estilizando botão de envio</h3>
+    <p>
+        Podemos utilziar algumas propriedades para realizar a estilização como: <em> color, 
+        background-color, border, border-radius, :hoves e text-shadow</em>
+        <br>
+        <input class="button" type="submit" value="Registrar">
+        
+    </p> 
+    <h3>Estilizando Fieldset</h3>
+    <p>
+        Fieldset é utilizado para criar uma caixa de entradas de informações com logenda, e pode também ser estilizado.
+    <form action="example.php" method="post">
+        <fieldset class="field">
+            <legend class="legenda-field">Entre em contato</legend>  
+           
+            Nome:<input class="entrada-field" type="text" name="name">
+            Email:<input class= "entrada-field"type="email" id="email-x" name="email" placeholder="seuemail@gmail.com">
+            <br>
+            <input class="enviar-field"type="submit">
+        </fieldset>
+    </form>
+    </p>
+    <h3>Alinhamento de formulários de controle</h3>
+    <p>
+        O html feito anteriomente não utilizava div e label, entretanto a maneira correta é utilizar. 
+        Para cada entrada deve ter uma div e uma label. O uso da div facilita o alinhamento. 
+        <strong>Lembrando que o uso da label é interessante para que, caso o usuario não clique exatamente
+            encima do input, e sim encima do nome, automaticamente a input é selecionada. Isso não acontece se não utilziar label. 
+            Teste as entradas abaixo e as feitas anteriomente sem label.
+        </strong>
+        Segue então o html abaixo:
+       
+        <form action="example.php" methos="post">
+            <div class="all">
+                <label for="username" class="titulo">Nome:</label>
+                <input type="text" id="username" name="name">
+            </div>
+            <div class="all">
+                <label for="email" class="titulo">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="all">
+                <span class=titulo>Genero</span>
+                <input type="radio" value="M" id="male" name="gender">
+                <label for="male">Masculino</label>
+                <input type="radio" value="F" id="fem" name="gender">
+                <label for="fem">Feminino</label>
+            </div>
+            <div class="all">
+                <input type="submit" value="Registrar" id="submit">
+            </div>
+            <hr>
+            <h1>Cursor</h1>
+            <h2>Cursor Style</h2>
+            <p class="cursor">
+                Podemos mudar o cursor do mouse utilizando a propriedade <strong>cursor</strong>. Essa propriedade
+                pode possuir os seguintes valores: <em>auto, crosshair, default, pointer, move, text, wait, help, url("caminho")</em>
+                <br>
+                <a class= "mouse" href="www.google.com.br">Mude o mouse passando aqui</a>
+                Passe o mouse no paragrafo.
+            </p>
+        </form>
+    </p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+    <link rel="stylesheet" href="./10.css" type="text/css">
+  <!-- Maneira de adicionar o CSS dentro da pagina html
+    <style type="text/css">
+     
+       body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:brown;
+            background-color: black;
+        }
+        h1,h2{
+            color: rgb(101, 0, 168)
+    
+        }
+    </style>
+    -->
+</head>
+<body>
+    <h1>Aprendendo CSS</h1>
+    <p>O CSS é o responsavel por estilizar a pagina. Para linkarmos ele à pagina html deve-se
+        inserir um link no head, contendo dentro da tag <b>link</b> <i>href, type(text/css), rel(stylesheet)</i>
+    </p>
+    <h2>Style no head</h2>
+    <p>A pagina pode ser estilizada de duas maneiras, criando um novo documento css e linkando ele como aprensentado
+        anterioemente ou utilizando a tag <b>style</b> no head, dendo dela deve conter o <i>type</i>.
+    </p>
+
+    <h1>Selectores CSS</h1>
+    <p>Existe diversas regras para selecionar uma tag e editar ela no CSS.
+        <dl class = "list">
+            <dt>Seletor Universal <b>* {}</b></dt>
+            <dd>Sera aplicado em todos os elementos da pagina</dd>
+            <dt>Seletor por tipo <b> h1, h2, h3 {}</b></dt>
+            <dd>Aplicada a mudança nas tags</dd>
+            <dt>Seletor por classe <b>.nomedaclasse {}</b></dt>
+            <dd>Aplica a mudança em todos os elementos que estão contidos naquela classe</dd>
+            <dt>Seletor por ID <b>#nomedoid {}</b></dt>
+            <dd>Aplica a mudança em todos os elementos que estão com aquele ID</dd>
+            <dt>Seletor de crianças <b>li>a{}</b></dt>
+            <dd>Aplica a mudança dentro da filha da tag</dd>
+            <dt>Seletor descendente <b>p a {}</b></dt>
+            <dd>Tem como alvo quaisquer elementos <a> que
+                sente-se dentro de um elemento 'p', mesmo que
+                existem outros elementos aninhados
+                entre eles</dd>
+            <dt>Seletor irmão adjacente <b>h1+p{}</b></dt>
+            <dd>
+                Corresponde a um elemento que é o
+                próximo irmão de outro</dd>
+            <dt>Seletor irmão geral <b>h1~p{}</b></dt>
+            <dd>Corresponde a um elemento que é um
+                irmão de outro, embora seja
+                não tem que ser diretamente
+                elemento precedente</dd>
+        </dl>
+    </p>
+    <h1>Regra de Cascata CSS</h1>
+    <p>Quando voce tem <i>duas regras</i> para se aplicar, ou seja dois tipos de 
+    você podera selecionar o que tem o procedenten anterior</p>
+    <p id="example">Por exemplo, <b>h1 e *</b> h1 é mais especifico, então a regra se aplica a ele.
+    <b>i e p</b> i é mais especifico então as alterações serao aplicadas a ele. Você pode usar o !important antes 
+    da propriedade para indicar que ele deve ser considerado o mais importante  que as outras regras.</p>
+
+    <div class="page">
+        <h1>Herança</h1>
+        <p>Você pode especificar a font-family da pagina usando apenas especificando o css do body</p>
+        <p>Propiedades de bordas não podem ser herdadas</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./13.Box.css" type="text/css">
+    <title>Box</title>
+</head>
+<body>
+    <h1>Box</h1>
+    <h2>Box Dimensões</h2>
+    <div class="box-1">
+        <p id="dimensao">
+            Um box deve conter o tamanho apenas para caber o conteudo. Podendo conter uma largura(width) e uma altura(height)
+            <br>Para especificarmos o tamanho de um box, usamos pixeis, porcentagem ou ems. <br>
+            Quando usamos <b>porcentagem</b> o tamanho do box deve ser relativo ao tamanho da janela do navegador ou de outro box.
+            <br>Se usado <b>ems</b> o tamanho do box é baseado no tamanho do texto dentro dele.
+        </p>
+    </div>
+    <h2>Limitando a Largura</h2>
+    <h3>min-width e  max-width</h3>
+    <p>
+        <div class="box-2">
+        <ul>
+            <li> A propiedade <strong>min-width</strong> é responsavel por especificar o menor tamanho que o box pode ter quando
+                a janela do navegador é pequena.</li>
+            <li>
+                Já a propiedade <strong>max-width</strong> indica a largura máxima que um box pode ter quando a janela do
+                navegador esta no máximo.
+            </li>
+        </ul>
+        <strong> Tente dimensionar o navegador! </strong>
+        </div>            
+    </p>
+    <h3 id="height">min-height e max-height</h3>
+    <p id="box-height">
+        De maneira similar ao método anterior, podemos utilizar o <strong>min-height e max-height</strong> para delimitar
+        a altura do box. <br>
+        Mas já parou pasa pensar o que acontece se o tamanho do box não é suficiente para caber seu conteudo? 
+        <em>Análise o CSS desta sessão.</em>
+        <br>
+    </p>
+    <h3>overflow</h3>
+    <p>
+        Para resolver o problema da sessão anterior onde ocorre transbordo de conteudo do box usa-se a propiedade
+        <strong>overflow</strong>. Ela possui dois valores <em>hidden e scroll</em>. 
+        A primeira ira esconder qualquer conteudo extra que não cabe no box.
+        <br>A segunda ira fazer um box para realizar uma rolagem do conteudo, ou seja, ira utilizar uma barra de rolagem.
+        <br><strong id="aviso">clique encima do box cinza anteior!</strong>
+    </p>
+    <hr>
+    <h2>Borda, margem e preenchimento</h2>
+    <p>
+        Todo o box possui as três propiedades para alterar sua aparencia: <b>border, margin e padding</b>. 
+        <dl>
+            <dt>Border</dt>
+            <dd>Todo box possui uma borda, caso não especificado sera 0px. Uma borda separa beira de uma box da outra.</dd>
+            <dt>Margin</dt>
+            <dd>As margens ficam foram da beira da borda. É utilizado para criar um vão entre dois box.</dd>
+            <dt>Padding</dt>
+            <dd>O preenchimento é o espaço entre a borda do box e o conteudo dentro dele.</dd>
+        </dl>
+    </p>
+    <h3>border-width</h3>
+    <p class="borda">
+        A largura de uma borda possui três tipos de valores: <strong>thin(fino), medium, thick(grosso)</strong>. 
+        Além desses valores, pode espeficar sua largura usando <b>pixels</b>. <strong>NÃO É POSSIVEL UTILIZAR 
+        border-width SOZINHO, É NECESSÁRIO UTILIZAR O BORDER-STYLE JUNTO.</strong>
+        <br> Para controlar a borda de cada vertice existe duas maneiras:
+        
+    </p>
+    <p>
+        <ol id="lista">
+            <li>Usando: border-top-width, border-right-width, border-button-width, border-left-width</li>
+            <li>Ou usando: boerder-widht: 3px 1px 4px 5px</li>
+        </ol>
+    </p>
+    <h3>border-style</h3>
+    <p>
+        Podemos controlar o estilo de uma borda utilizando p <b>border-style</b>. Ele pode conter os seguintes valores:
+        <br>
+        <span class="solid"><strong>Solid</strong>: uma linha sólida.</span>
+        <br>
+        <span class="dotted"> <strong>dotted</strong>: uma série de pontos com o espaçamento de 2px.</span>
+        <br>
+        <span class="dashed">  <strong>dashed</strong>: uma série de linhas curtas.</span>
+        <br>
+        <span class="double"><strong>double</strong>: duas linahs solidas.</span>
+        <br>
+        <span class="groove"><strong>groove</strong>: parece ser esculpido na pagina.</span>
+        <br>
+        <span class="ridge"><strong>ridge</strong>: parece se destacar na pagina.</span>
+        <br>
+        <span class="inset"><strong>inset</strong>: parece estar embutido na pagina</span>
+        <br>
+        <span class="outset"> <strong>outset</strong>: parece que esta fora da tela.</span>
+        <br>
+        <strong>hidden/none</strong>:não possui borda.
+
+        <span class="individual"><br><strong>Pode-se colocar estilo em vertices separadas nas bordas, usando o border-possição-style</strong></span> 
+    </p>
+
+    <h3>border-color</h3>
+    <p class="color">
+        Podemos adicionar cores nas bordas também, tanto na borda toda ou em cada vértice da borda de maneira similar aos 
+        métodos anteriores. <b>border-posição-color</b> ou <b>border-color: cor cor cor cor</b>.
+    </p>
+    <h3>TUDO ACIMA ABREVIADO ;@ </h3>
+    <p class="tudo">
+        Todas as propiedades anteriores vista de forma separadas podem ser vidas separadas.
+        <br>Utilizando a propiedade <b>border:</b> com os três valores <strong>border: tamanho estilo cor</strong>
+    </p>
+    <hr>
+    <h2>Padding</h2>
+    <p class="padding">
+        A padding como apresentado anteriormente, é o espaçamento entre o conteudo e as bordas. Assim como as propiedades 
+        das bordas, pode-se colocar o valor das padding de duas maneiras diferentes:
+        <br> <strong>padding-posição</strong>, tal que posição= width, top, botton, left.
+        <br>Ou usando a forma abreviada, <strong>padding: 5px 5px 4px 3px</strong>. 
+        <br>Pode-se também adicionar um unico valor a padding, dessa maneira ira considerar o espaçamento para todos os lados.
+        <br>A padding não possui herança, dessa maneira se deseja mudar a fonte é necessario especificar dentro dela.
+    </p>
+    <h2>Margin</h2>
+    <p class="marg1">A margem controla o espaçamento entre dois boxes.  </p>
+    <p class="marg2">Ela frequentemente é usada em pixeis. Assim como nas propiedades anteriores, pode ser especificada
+        inidivualmente ou dizendo a posição de cada margin. 
+    </p>
+    <h3>Centralizando conteúdo</h3>
+    <p class="center">
+        Para centralizar o box na pagina ou o seu conteudo, é necessario especificar os valores do <strong>left-margin e right-margin</strong>
+        com o valor <strong><em>auto</em></strong>.
+    </p>
+    <hr>
+    <h1>Inline/Block</h1>
+    <p>
+        A propiedade usada aqui é o <strong>display</strong>. O display possui 4 valores possiveis:
+        <br><strong>inline</strong>: Deixa os elementos em forma de linha, não podendo alterar as propiedades de altura e largura.
+        <br><strong>block</strong>: Deixa os elementos em um formato de bloco.
+        <br><strong>inline-block</strong>: Deixa os elementos em linha, sendo possivel alterar a largura e altura.
+        <br><strong>none</strong>: Deixa normal.
+
+        <ul >
+            <li class="inline">Home</li>
+            <li class="inline">Produtos</li>
+            <li class="inline">Quem somos</li>
+            <li class="inline">Contato</li>
+        </ul>
+        <ul >
+            <li class="block">Html</li>
+            <li class="block">CSS</li>
+            <li class="block">JavaSript</li>
+            <li class="block">SQL</li>
+        </ul>
+        <ul >
+            <li class="inline-b">Ínicio</li>
+            <li class="inline-b">Linguagens</li>
+            <li class="inline-b">Aprenda</li>
+            <li class="inline-b">Mais recentes</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Escondendo Box</h2>
+    <p>
+        É possivel esconder ou deixar visivel um box usando a propriedade <strong>visibility</strong>, contendo
+        dois possiveis valores: <em>hidden e visible</em>. 
+        Exemplo:
+        <ul >
+            <li class="inline-v">HTML</li>
+            <li class="inline-h">Python</li>
+            <li class="inline-v">JavaScript</li>
+            <li class="inline-v">SQL</li>
+        </ul>
+        <br>Observe que é deixado um vacuo onde o valor foi escondido.
+    </p>
+    <hr>
+    <h2>Bordas com imagens</h2>
+    <p>
+        A propiedade <strong>border-image</strong> aceita cologar imagens na borda. São três tipos de valores
+        para essa propiedade. O url da image, o tamanho do fatiamento e o tipo de fatiamento.
+        <br><strong>Exemplo: border-image: url(/image/border.png) 30 repeat</strong>. 
+        <br>Para entendermos sobre fatiamento é necessario saber o tamanho da imagem. Obsver a imagem
+        <img src="./images/border.png" alt="borda">
+        Os pontos laterais(laranja) são chamados de <em> cantos</em>, já os pontos internos(laranja claro) são as bordas.
+        A propiedade <strong>round</strong> repede apenas as bordas não as laterais.
+        <br>Ela possui um tamanho de 90x90, se a mesma é formada por três bolas em cada lateral, cada bola
+        possui 27px. Dessa maneira podemos realizar o fatiamento de acordo com o tamanho da imagem e o fatiamento 
+        de uma unica bola.  Para que apareça a bola inteira, colocamos o valor <strong>no tamanho de fatiamento = 27</strong>
+       <br>e o tamanho da bordar utilizando <em>border</em>: 27. Caso queiramos 2 bolas, utilizamos 54(27+27).
+       <br>Quanto aos tipos de fatiamento temos que:        
+        <br> <strong>stretch</strong>(alonga as bordas da imagem) 
+        <strong>repeat</strong>(repete as bordas da imagem) e <strong>round</strong>(da mesma maneira q o repeat porem se os ladrilhos
+        nao se encaixam, eles vao se encaixar).
+        <br>Usamos a imagem ao lado para fazer uma borda. 
+       
+       
+    </p>
+    <p class="one">Usando o stretch: fatiamento tamanho 27 (uma unica bola)</p>
+    <p class="repeat">Usando o repeat: fatiamento tamanho 27(uma unica bola)</p>
+    <p class="tree">Usando o round: fatiamento tamanho 54(duas bolas)</p>
+   <hr>
+   <h2>Box Shadow</h2>
+   <p class="box-shadow">
+       Funciona de maneira similar da propiedade text-shadow. Na propiedade <strong>box-shadow</strong>
+        podemos definir os valores do deslocamento vertical do box, a distancia e a sua cor. Ex.: <strong>box-shadow: 5px 5px 10px #FFFFF;</strong>
+    </p>
+    <hr>
+    <h2>Arredondamento de cantos</h2>
+    <h3>border-radius</h3>
+    <p>
+        A propiedade <strong>border-radius</strong> é usada para arredondar os cantos de um box. Sendo especificado em pixels.
+        Podemos especificar a cada canto usando: 
+        <em> border-top-right-radius
+        border-bottom-right-radius
+        border-bottom-left-radius
+        border-top-left-radius</em> 
+        ou usando a forma abreviada(top, direita,inferior, inferior, esquerda) <strong> border-radius: 5px 10px 7px 1px;</strong> ou ainda especificar uma valor 
+        para todos os cantos<strong>border-radius: 10px</strong>. 
+        
+            <input type="submit" value="Enviar" id="btn-enviar">
+            <textarea name="text" id="text-area" cols="30" rows="10" placeholder="Digite um texto..."></textarea>
+    </p>
+    <h3>Formas Elipticas</h3>
+    <p>
+        Podemos criar complexos formatos especificando a distancia horizontal e vertical de cada arredondamento de canto.
+        Exemplo: <strong>border-radius: 80px 50px </strong> ou ainda, cada canto com sua propiedade <strong>border-top-left-radius: 80px 50px</strong>
+    </p>
+    <p class="ex1"></p>
+    <p class="ex2"></p>
+    <p class="ex3"></p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/
+        swfobject/2.2/swfobject.js">
+    </script>
+ <script type="text/javascript">
+    swfobject.embedSWF("flash/bird.swf",
+    "bird", "400", "300", "8.0.0");
+</script>
+
+
+    <title>Flash</title>
+</head>
+<body>
+    <h1>Flash para video, animações e musicas</h1>
+    <p>Esse tipo de trabalho atualmente é feito em Js, entretando pode se usar o adobe Flash para criar animações
+        e inserir no site com o formato .swf atraves do SWFObject, usando script no head.
+        <br> Esse <b>scrip</b> é feito no JavaScript. Dentro do primeiro script deve conter o local do script e no segundo o local onde estava o arquivo .swf
+
+    </p>
+    <h1>Video</h1>
+    <p>Deve-se seguir 3 etapas para adicionar um video  usando flash no site:
+        <dl>
+            <dd>1º</dd>
+            <dt>Conversão do formato do video para o formato <b>FLV</b>.</dt>
+            <dd>2º</dd>
+            <dt>Ira precisar de um Player escrito em Flash. Grande parte são comprados.</dt>
+            <dt>3º</dt>
+            <dd>Incluir o video na pagina.Ira utilizar JS -> SWFObject</dd>
+        </dl>
+        Entretando atravaes do HTML 5 é possivel também utilizando a tag <b>video</b> dentro dela deve conter algumas informações:
+        <dl>
+            <dd><b>Tamanho</b></dd>
+            <dt>Especificar o tamanho com  width e height</dt>
+            <dd><b>src</b></dd>
+            <dt>O caminho do video</dt>
+            <dd><b>poster</b></dd>
+            <dt>o caminho de uma imagem para ser o poster do video enquanto ele não for iniciado</dt>
+            <dd><b>controls</b></dd>
+            <dt>indica que o navegador pode usar seus própios controles para reprodução</dt>
+            <dd><b>autoplay</b></dd>
+            <dt>inicia o video automaticamente</dt>
+            <dt><b>loop</b></dt>
+            <dt>deixa o video em loop</dt>
+            <dt><b>preload</b></dt>
+            <dd>É chamado quando a pagina é iniciada e pode conter três valores <b>none</b>(o navegador não pode carregar o video antes que o usuario aperte o play) <b>auto</b>
+            (o navageador pode carregar o video apos carregar) e <b>metadata</b>(o navegador pode coletar informações como tamanho, primeiro frame, track list e duração)</dd>
+        </dl>
+        <video src="./video/videoplayback.mp4" poster="./images/pink-hair-1450045_1920.jpg" width="400" height="300"  controls autoplay loop  preload="auto" ></video>
+       <br>Outra maneira de adicionar video é usando a tag video dentro dela as especificações e entre o seu fechamento o src do video, 
+       podendo conter também um <b>type</b> (apresenta o formato do video antes para o navegador para verificar se é possivel carrega-lo)
+       e o <b>codecs</b>(responsavel por codificar e decodificar o video, fazer sua transformação para outro formato, normalmente transformando em um video mais leve,
+        os seus atributos depende do que deseja podendo ser H.264, DivX, MP4, AVI, MPEG-2, AVCHD, AAC, OGG, MKV )
+        <br>
+        <video width="500" height="400" controls autoplay >
+            <source src= "./video/video2.mp4" type="video/mp4">
+        </video>
+        <br>
+        Utilizando o atributo source você pode adicionar o video varias vezes com formatos diferente.
+        Caso o autoplay esteja definido, o preload não ira funcionar
+    </p>
+    <hr>
+    <h1>Audio</h1>
+    <p>A adição dos audios no html é de forma parecida com o do de videos, apenas alterando a tag video para <b>audio</b>
+    Os atributos são os mesmos.
+
+    <video src="./audio/01 EU TENHO MEDO.mp3" controls autoplay loop></video>
+    </p>
+    
+</body>
+</html>

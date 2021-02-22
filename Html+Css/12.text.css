@@ -1,0 +1,229 @@
+#serif{
+    font-family: serif;
+}
+
+#sans{
+    font-family: sans-serif;
+}
+
+#monospace{
+    font-family: monospace;
+}
+
+#li{
+    font-weight: lighter;
+}
+
+#bo{
+    font-weight: bold;
+}
+
+#normal{
+    font-style: normal;
+}
+
+#italic{
+    font-style: italic;
+}
+
+#oblique{
+    font-style: oblique;
+
+}
+
+#condensed{
+    font-stretch: condensed;
+}
+
+#regular{
+    font-stretch: normal;
+}
+
+#extended{
+    font-stretch: expanded;
+    font-size: 2em;
+}
+
+#cursive{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#fantasy{
+    font-family: fantasy;
+    font-size: 70%;
+
+}
+
+h1,h2{
+    font-family:monospace, Georgia, 'Times New Roman', Times, serif ; /* A lista de fonte é para caso o usuario nao */
+}                                                         /* ter a primeira instalada, possa aparecer a próxima*/
+
+.typescale{
+    background-color: rgb(161, 122, 155);
+}
+
+/*Usando fonte face*/
+@font-face{
+    font-family: caudex;
+    src: url(./fonts/caudex/caudex-regular-webfont.woff); /*Endereço de onde esta o arquivo*/
+   
+}
+@font-face{
+    font-family: ray;
+    src: url(./fonts/raay/reey-regular-webfont.woff);
+}
+
+.font-face{
+    font-family: caudex;
+}
+
+.weight{
+    font-weight: bold;
+}
+.italic{
+    font-style: oblique;
+}
+
+#upper{
+   text-transform: uppercase;
+}
+
+#lower{
+    text-transform: lowercase;
+}
+
+#cap{
+    text-transform: capitalize;
+}
+
+#none, a{
+    text-decoration: none;/* usado para tirar o sublinhado do link*/
+}
+
+#under{
+    text-decoration: underline;
+}
+
+#over{
+    text-decoration: overline;
+}
+
+#line{
+
+    text-decoration: line-through;
+}
+
+#bilink{
+    text-decoration: blink;
+}
+
+/*Altura entre as linhas*/
+
+.font-face{
+    line-height: 3em;
+}
+/*Espaçamento entre as palavras e letras*/
+
+h1,h2{
+
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+#word{
+    word-spacing: 1em;
+}
+
+/*Alinhamento de texto*/
+p{
+    text-align: justify;
+}
+
+/* Alinhamento Vertical*/
+
+#young1{
+    vertical-align: baseline;
+}
+#young2{
+    vertical-align: sub;
+}
+#young3{
+    vertical-align: super;
+}
+#young4{
+    vertical-align: top;
+}
+#young5{
+    vertical-align: text-top;
+}
+#young7{
+    vertical-align: middle;
+}
+#young7{
+    vertical-align: bottom;
+}
+#young8{
+    vertical-align: text-bottom;
+}
+
+/*text-ident*/
+
+#indent{
+    text-indent:50px ;
+}
+
+#indent2{
+    text-indent: -50px;
+}
+
+/* text-shadow */
+
+#sombra{
+    text-shadow:4px 5px 7px #797b7e ;
+}
+
+.lista{
+    text-shadow: -7px -5px 4px #797b7e;
+}
+
+/*:first-line e :first-letter*/
+
+p:first-letter{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: blue;
+    font-weight: bolder;
+}
+
+/*:link e :visited*/
+
+.sites :link{
+    background-color: black;
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 3px 2px 5px #51bcff;
+}
+
+.sites :visited{
+    background-color: black;
+    font-size: 15px;
+    color: #ff0000;
+    text-shadow: 3px 2px 5px #640f09;
+}
+
+/*:hover :focus :active*/
+
+#enviar:hover{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+#enviar:active{
+    color:red;
+}
+
+#text:focus {
+    background-color: #424141;
+    color: #00f300;
+}

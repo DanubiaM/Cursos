@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <h1>Bom, e os botões como adicionar em um formulario?</h1>
+    <p>Existe varios tipos de botoes, radio, checkbox, drop down list, multiple select box, file input box, submite button, image button</p>
+
+    <h2>Radio Button</h2>
+    <p>É formado da mesma maneira que os formularios anteriores apenas mudando o tipo de entrada para radio, com isso
+        deve se alterar o valor de name(nome enviado ao servidor selecionado pelo usuario), value(valor que deve ser enviado para o servidor),
+        checked( inicia a pagina com a opcao marcada).
+        <br/>
+        Selecione o tipo de serviço
+        <form>
+            <input type="radio" name="manutencao" value="manutencao"> Manutenção
+            <input type="radio" name="instalação" value="instalacao"> Instalação
+            <input type="radio" name="troca" value="troca"> Troca de Cabo
+            <input type="radio" checked="nenhum"> Nenhum
+        </form>
+        Esse tipo de botão <b>não permite que seja retirado a opção marcada</b>.
+    </p>
+    <hr/>
+    <h2>Checkbox Button</h2>
+    <p>Funciona de maneira similar a anterior, entretando deve se mudar o type para <b>checkbox</b>.
+    Além disto, permite que seja retirado a opção marcada.
+    <br/>
+    Selecione a potencia do arcondicionado
+    <form action="nenhuma">
+        <input type="checkbox" name="12000" id="12000">12000BTU
+        <input type="checkbox" name="8000" id="8000">8000TU
+        <input type="checkbox" name="7000" id="7000">7000BTU
+        <input type="checkbox" name="9000" id="9000">9000BTU
+    </form>
+    </p>
+    <hr/>
+    <h2>Drop Down List Box</h2>
+    <p> Este tipo de button se diferencia na sua sintaxe, pois não utiliza mais a tag input e sim <b>select</b>.
+    Dentro do formulario deve conter a tag select e dentro dela a tag option, contendo as opções da lista.
+   
+    <br> <i>
+        'form action="server"
+        <br>'select name="nomedalista"
+            <br>'option value="valorenviado para o servidor"'
+            <br>'option value="valorenviado para o servidor"'
+            <br>'option value="valorenviado para o servidor"'
+        '        
+        '
+    </i>
+    <br>
+    <br>
+    Selecione o equipamento utilizado:
+    <form>
+        <select name="equipamentos">
+            <option value="microtik">Microtik</option>
+            <option value="onutink">ONU Tink</option>
+            <option value="mimo">Mimo</option>
+            <option value="mercolis">Mercolis</option>
+            <option value="intelbras">IntelBras</option>
+            <option value="tplink">Tp-link</option>
+        </select>
+    </form>
+    </p>
+    <hr/>
+    <h2> Multiple Select Box</h2>
+    <p> Diferença desse modelo para o anterior esta na opção de selecionar mais de uma opção na lista.
+        Para isso usa-se a teg multiple dentro do select. o size define o tamanho da lista
+    <br>
+    <form>
+        <select name="moveis" multiple="multiple" size="5">
+            <option value="TV">TV</option>
+            <option value="Geladeira">Geladeira</option>
+            <option value="Microondas">Mircroondas</option>
+            <option value="Batedeira">Batedeira</option>
+            <option value="fogao">fogao</option>
+        </select>
+    </form>
+    </p>
+    <h2>File Input And Submit</h2>
+    <p> Quando se deseja adicionar um arquivo para uploade deve-se usar a tag input e colocar o sue type = file
+        <br/> Já para criar um botão para enviar/submeter algo mude o type do input para submite
+        <form>
+            <input type="file" name="arquivo" >
+            <input type="submit" value="Enviar">Enviar
+        </form>
+
+    </p>
+    <hr/>
+    <h2>Image Button</h2>
+    <p>Para enviar imagems deve modificar o type do input para image, além disso vc pode delimitar o tamanho da imagem. No campo src você definir 
+        onde esta contido a imagem
+        <form>
+            <input type="image" src="./images/71nQDXqkyDL.png" width="100" height="100">
+        </form>
+    </p>
+    <hr/>
+    <h2>Botão e controles escondidos</h2>
+    <p> Você pode realizar combinações de texto e imagens  dentro da abertura de um button. <b>'button 'img''</b>. Por padrão se não definir
+        o type do button ele é automaticamente definido como submit.
+        <br/> Comumente se usa o type hidden para alguma inclusao que não queira que o usuario veja. Como por exemplo o id de quando o formulario é enviado
+    <form>
+        <button type="submit">Enviar</button>
+        <button type="submit"> <img src="./images/png-clipart-computer-icons-document-add-button-number-add-button.png" width="30" height="25"></button>
+        <input type="hidden" name="mark" value="nsei">
+    </form>
+    </p>
+    <h3> Button=Submit x Input="submit"</h3>
+    <p> Pode-se observer que os dois métodos tem a mesma funcionalidade, entretanto o button permite adicionar texto ou imagem entre
+        sua tag, o que facilita sua edição e criação de butões com imagens.
+        o button existe três tipos:
+        <ul>
+            <li> submit</li>
+            <button type="submit">Enviar</button>
+            <li>disable</li>
+            <button disabled="disabled">Desabilitar</button>
+            <li>reset</li>
+            <button type="reset">Reset</button>
+        </ul>
+        Já o input pode conter diferentes formas além do submit, como: color, date, datetime, datetime-local, email, month, number, 
+        range, search, tel, time, url, week, text, file, hidden, image, month, radio, reset, password. 
+    </p>
+    <hr/>
+    <h2>Label</h2>
+    <p>Uma label pode ser utilizada para dois caminhos:
+        <ol>
+            <li>Envolvendo o texto, a descrição e a entrada do formulario</li>
+            <li>Separar o controle do formulario e qual formulario de controle é um rótulo</li>
+        </ol>
+    Dentro da tag label usamos o <b>for</b>, ele é usado para se associar com o id de uma entrada. Portanto o <b>for</b> deve conter o mesmo valor do <b>id</b> de uma input caso queira conectar ambas.
+    <br/>
+    <label > Nome:
+        <input type="text" name="nome" id="nome"></label>
+    <br/>
+    Genero:
+    <label for="female">Femenino</label>
+      <input type="radio" name="genero" id="female">
+    <label for="masc">Masculino</label>
+        <input type="radio" name="masc" id="masc">
+        <br> <strong>Importante</strong>: a diferença do label é que se o input estiver conectado no id do label, ao clicar na palavra do label ja seleciona o input.     
+    </p>
+    <hr/>
+    <h2>Fieldset</h2>
+    <p>
+        Para agrupar um formulario de controle utiliza-se a tag <b>fieldset</b>. Dentro dela utilize a tag <b>legend</b> para adicionar
+        uma legenda. 
+        <b>Para aparecer uma mensagem dentro de alguma entrada de texto, utilize dentro da tag <i>placeholder="texto"</i></b>
+        <fieldset >
+            <legend>Entre em contato conosco:</legend>
+            <label for="nome_1">Nome:</label>
+                <input type="text" name="name" id="nome_1">
+            <br/>
+            <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            <br/>
+            <label for="assunto">Assunto:</label>
+                <input type="text" name="assunto" id="assunto" placeholder="Digite um assunto">
+            <br/>   
+            <label for="detalhe">Insira a informação:</label>
+            <br/>
+                <textarea name="comentario" id="detalhe" cols="20" rows="5" placeholder="Digite um texto"></textarea>
+            <br/>
+            <button>Enviar</button>
+        </fieldset>
+    </p>
+    <hr/>
+    <h2>Validação de formulario</h2>
+    <p>Caso haja necessidade de se enviar uma mensagem solicitando ao usuario para preencher o campo deve-se utilizar o <b>required</b> dentro da tag input.
+    
+        <fieldset>
+            <legend>Deixe seu contato</legend>
+            <label for="nameuser">Nome:</label>
+                <input type="text" id="nameuser" placeholder="Digite seu nome completo" required="required">
+            <br>
+            <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" required="required">
+            <br>
+            <label for="number"></label>
+                <input type="tel" name="emailnumber" id="number" required="required" placeholder="DDD + numero">
+            <input type="submit" value="Enviar">
+        
+        </fieldset>
+    </p>
+    <hr/>
+    <h2>Data, Url e Search</h2>
+    <p>
+        Outro tipo de valor possivel atribuir ao type são so de url, search e date.
+
+        <input type="search" placeholder="Digite aqui sua pesquisa">
+        <input type="date">
+        <input type="url" name="url" id="url">
+    </p>
+</body>
+</html>

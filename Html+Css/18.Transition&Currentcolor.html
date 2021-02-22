@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./18.ExtraCSS.css" type="text/css">
+    <title>Extras do CSS</title>
+</head>
+<body>
+    <h1>Transição</h1>
+    <p>
+        A propriedade <strong>transition</strong> permite realizar mudança nos valores do box.
+        Para isso é necessário definir as propriedades, e depois criar um <em>:hover</em> para a mudança poder realizar
+        as mudanças com o transition. <br>
+        Existe 4 tipos de propriedades de transição:
+        <br>transition-delay 
+        <br>transition-duration 
+        <br>transition-property 
+        <br>transition-timing-function. 
+        
+    </p>
+    <h2>transition-timing-function</h2>
+    <p>
+        Essa propriedade especifica a velocidade em que desejamos que aconteça a transição. Possui os seguintes
+        valores: 
+        <ol>
+            <li>ease: inicio rápido; meio lento; fim rápido</li>
+            <li>linear: mesma velocidade do inicio ao fim</li>
+            <li>ease-in: inicio lento; resto normal</li>
+            <li>ease-out: final lento; resto normal</li>
+            <li>ease-in-out: inicio e fim lento; meio normal</li>
+        </ol>
+    </p>
+    <h2>transition-duration</h2>
+    <p>
+        A propriedade <strong>transition-duration</strong> nos permite definir o tempo da transição.
+        Normalmente definida em <em>segundos, exemplo: 2s</em>. Se colocada dentro do seletor hover, a transição
+        do hover que ira durar 2s.
+    </p>
+    <div class="ease">ease</div>
+    <div class="linear">linear</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+</body>
+
+    <h2>transition-property</h2>
+    <p>
+        Essa propriedade nos permite especificar que propriedade do seletor desejamos suavizar a transição.
+        Dessa maneira, basta especificar: <em>transition-property:width</em>, que a transição do width sera suavizada.
+    </p>
+    <h2>transition-delay</h2>
+    <p>
+        Essa propriedade da um atraso para a transição da propriedade, também é especificada em segundos.
+        Exemplo: <em>transition-delay:1s</em>. 
+    </p>
+    <div id="div-1"> </div>
+
+    <h2>transition resumido</h2>
+    <p>
+        Vimos o uso de cada propriedade de transição separadamente, mas assim como outras propriedades do CSS, também 
+        podemos utilizar a forma resumida. Para isso basta utilizar a propriedade <strong>transition:property duration function delay, property duration function delay ... </strong>
+        Dessa maneira podemos adicionar quantas transições quisermos, basta apenas separar por virgula.
+    </p>
+    <div id="div-2"></div>
+    <h1>CurrenteColor</h1>
+    <p>
+        Essa propriedade permite que uma cor de uma propriedade seja repitida sem que seja necessário escrever o nome da cor
+        novamente.
+    </p>
+    <div id="current">
+        <button type="submit">Enviar</button>
+    </div>
+    
+</html>

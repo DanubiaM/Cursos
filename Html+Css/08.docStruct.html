@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Aprendendo a estrutura de uma pagina html">
+    <meta name= "keywords" content="meta. doctype. class. id">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Danubia M">
+    <meta http-equiv="pragma" content="no-cach">
+    <meta http-equiv="experies" content="11/11/2020">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOCTYPE</h1>
+    <p>Todo documento que se deseja construir em html deve ser iniciado com um &lt; !DOCTYPE  html>, isso ajuda o navegador
+        a indentificar a linguagem.
+    </p>
+    <hr>
+    <h1>META</h1>
+    <p>É um elemento dentro do head que contem as informações sobre sua pagina. Podendo ser <b> &lt;meta name=description,keywords,robots> &lt; meta http-equiv= "author,pragma ou experies" ></b></p>
+    <br>pragma é provieniente do cach da pagina, usado para salvar o cach da pagina e diminuir o tempo na proxima visita à pagina.
+    <hr>
+    <h1>ID atributo</h1>
+    <p>Em html usa-se o atributo id em qualquer elemento ou tag. Isso ajuda a identificar cada elemento, facilitando
+        assim sua edição no CSS ou adicionar interatividade com JS. 
+        Para isto, basta dentro da tag adicionar o nome <b> id="identificação da tag" </b>.
+    </p>
+    <hr>
+    <h1>Class atributo</h1>
+    <p class="paragrap">O atributo class dentro de uma tag serve parecido com o atributo id, entretando é utilizado para modificar varios
+        elementos que estão contidos nessa classe. Dessa maneira a classe altera varias tags ou elementos, já o id apenas um unico,
+        pois ele identifica apenas aquela tag.
+    </p>
+    <hr>
+    <h1>Agrupamento de texto e elementos em um bloco: DIV</h1>
+    <p>É possivel grupar varios itens juntos para criar um unico bloco, facilitando assim a edição no CSS. 
+        Para isso basta utilizar a tag <b>div</b> e dentro dela adicionar os elementos do bloco.
+        <br> Isso é utilziado por exemplo para a criação do cabeçalho/menu do site, todos os elementos sao agrupados em uma div.
+    <div id="header">
+        <img src="./images/young-girl.jpg" alt="Jovem girl"  height="200" width="300">
+        <ul>
+            <li> <a href="home.htm">Home</a></li>
+            <li> <a href="we.html">Quem somos</a></li>
+            <li> <a href="products.html">Nossos produtos</a></li>
+            <li> <a href="contatc.html">Entre em contato</a></li>
+        </ul>
+    </div>
+    <br> Enqquanto o div é utilizado para agrupar e estilizar um bloco, para realizar a ação de estilizar alguma linha
+    usa-se o <b>span</b>, no span é possivel adicionar uma class e <span id="line"> estilizar-lo no CSS</span>.
+    
+    </p>
+    <hr>
+    <h1>Iframe</h1>
+    <p>O <b>iframe</b> é como uma pequena janela dentro da sua pagina onde pode ver outra pagina. Normalmente é utilziado para ver o google Maps
+    <br>Os seus atributos são apenas <b>src, height, width, scrolling, frameborder e seamless</b>. 
+    Src, height e width já sabemos suas funcionalidader, o que muda são os atributos scrolling, frameborder e seamless.
+    <br>Scrolling: Não é utilizado no HTML5 e sim no XML e HTML4. É utilziado para indicar se o iframe pode ter barra de rolagem ou não
+    Aceitando que o usuario se mova dentro do iframe.
+    <br>Frameborder: não é suportado no HTML5 e sim no HTML4  e XML. É usado para inidicar se tem borda, 0 quando não tem borda e 1 com borda.
+    <br>Seamless: usado no HTML5 para indicar onde as barrar de rolagem não sao desejadas. Não é necessario ter valor, porem alguns autores utilizam.
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15371.996456173412!2d-56.103067849999995!3d-15.591696200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ea04ecdfd93477c!2sSorveteria%20Rei%20Cuiab%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1605143085280!5m2!1spt-BR!2sbr" frameborder="1" width="500" height="500" scrolling="yes"></iframe>
+</p>
+</body>
+</html>

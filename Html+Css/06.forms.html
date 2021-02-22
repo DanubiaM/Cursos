@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1> Formulários, como funcionam?</h1>
+    <p> Pode-se usar formularios para:
+        <ul>
+            <li>Adicionar Texto</li>
+            <li>Senha</li>
+            <li>Area de Texto</li>
+            <li>Marcar escolhar</li>
+            <li>Check Box</li>
+        entre outros
+        </ul>
+        A estrutura de um formulario é 'form', dentro dele deve conter as seguintes informações
+        <br/><b>'form= action"link do server" method="post or get" '</b>
+        <dl>
+            <dt>action</dt>
+            <dd>Dentro de action deve conter o URL da página no servidor que receberá o
+                informações no formulário quando é submetido.</dd>
+            <dt>method: get or post</dt>
+            <dd>o metodo get deve ser espeficidado apos a action, é ideal para pequenos formularios e quando esta apenas recuperando dados
+                de um servidor da web.
+            </dd>
+            <dd>post -> são enviados no que são conhecidos como cabeçalhos http. É usado para arquivos longos, envio da informações confidenciais
+                adiciona ou remove informações no banco de dados.
+            </dd>
+        </dl>
+    </p>
+    <form>Formulario</form>
+    <h2> Formularios  de entrada de dados</h2>
+    <p>
+        Para entrar com os dados em um formulario deve criar uma 'input'
+        <br/><b> 'form action="link do server"' 'input type="tipo de entrada" name="username" size="tamanho" maxlength="maximo de caracteres"' </b>
+        <br/>Dentro da entrada <b>input</b> adiciona o campo <b>type</b> onde define o tipo de dado no formulario de entrada
+        <br/> <b>name</b> é necessario para servidores saber o nome do dado que esta entrando, funciona como uma identificação do dado de entrada.
+        <br/> <b>size</b> é para alterar o tamanho do box, porem não é usado em codigos novos, sendo feito a alteração em CSS.
+        <br/> <b>maxlength</b> usado para definir o numero maximos de caracteres contidos no box de entrada.
+        <br/>
+    </p>
+    <p>
+        Usuario:
+        <form>
+            <input type= "text" name="username" size="30" maxlength="25">
+        </form>
+    </p>
+    <p> Para senhas pode-se mudar o campo <b>type</b> para 'passoword' 
+    <br/>Usuario:
+    <form>
+        <input type= "text" name="username" size="30" maxlength="25">
+    </form>
+    Senha:
+    <form>
+        <input type ="password" name = "userpassword" size= "30" maxlength="10">
+    </form>
+    </p>
+    <p>Para entrar com um box de entrada de texto deve-se colocar em vez de input, o termo <b>textarea</b>
+     dentro deve conter <i>name</i> <i>cols</i> (numero de colunas)  e <i>rows</i>(numero de linhas)
+     <b><i>'form 'textarea name="nome" cols="colunas" rows="linhas" ' texto dentro do box ''</i></b>
+
+     <br/> Adicione um comentario
+     <form>
+         <textarea name="commits" id="comentario" cols="40" rows="7">Entre com um comentario</textarea>
+     </form>
+    </p>
+</body>
+</html>
