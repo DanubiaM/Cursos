@@ -1,0 +1,63 @@
+/*RESET*/
+*{
+    margin:0; 
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box; /*Define que sera incluso no tamanho do total width e height o tamanho do padding  e bordar, e não a margin. */
+    border:none;
+    outline:none; /*outline é um contorno. Diferente da borda, ele é desenhado encima do conteudo*/
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.5em;
+    color:#333;
+}
+p{
+    font-size: 1em;
+    color:#777;
+}
+
+/*CABEÇALHO*/
+.cabecalho{
+    width: 100%;
+    float:left;
+    padding: 50px 8%;
+    background-color: #13c7ae;
+}
+.logo a{
+    width: 221px;
+    height: 48px;
+    float:left;
+    background: url(../img/logo.png) no-repeat;
+    font-size: 0; /*escondendo o texto*/
+}
+
+.cabecalho form{
+    float:right;
+    width: 30%;
+
+
+}
+.cabecalho input[type="text"]{
+    width: 85%; /*ocupara 85% do formulario e o butão 15% = 100%*/
+    float:left;
+    padding: 15px 10px;
+}
+.cabecalho button{
+    float:right;
+    width: 15%;
+    padding: 15px 10px;
+    background-color: #0cae98;
+    color:#fff;
+    cursor:pointer;
+}
