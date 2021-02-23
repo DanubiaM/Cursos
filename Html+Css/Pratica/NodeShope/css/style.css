@@ -52,6 +52,7 @@ p{
     width: 85%; /*ocupara 85% do formulario e o butão 15% = 100%*/
     float:left;
     padding: 15px 10px;
+    border-radius: 5px 0px 0px 5px;
 }
 .cabecalho button{
     float:right;
@@ -60,4 +61,47 @@ p{
     background-color: #0cae98;
     color:#fff;
     cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*NAV*/
+
+.menu{
+    width: 100%;
+    float:left;
+    background-color: #111;
+    padding: 18px 8%;
+
+}
+.menu li{
+    float:left;
+}
+.menu li a{
+    color:#9d9d9d;
+    margin-right: 25px;
+}
+.menu li a:hover{
+    color:#fff;
+}
+
+/*Social Links*/
+.social-icons{
+    float:right;
+}
+.social-icons a{
+    color:#fff;
+    float:left;
+    margin-left: 12px ;
+}
+.btn-facebook:hover{
+    color:#3B5998;
+    text-shadow: #fff 1px 1px ;
+}
+.btn-twitter:hover{
+    color:#54A4D6;
+    text-shadow: #fff 1px 1px ;
+}
+.btn-google:hover{
+    color:#D73D32;
+    text-shadow: #fff 1px 1px ;
 }
