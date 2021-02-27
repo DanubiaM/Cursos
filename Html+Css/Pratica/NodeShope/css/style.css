@@ -195,3 +195,13 @@ p{
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*RODAPÉ*/
+
+.rodape{
+    width: 100%;
+    float: left;
+    background-color: #13c7ae;
+    padding: 10px 8%;
+    color: #fff;
+}
