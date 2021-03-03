@@ -20,3 +20,36 @@ h1,h2,h3{ margin:0; padding:0 ;}
 ul, ol { list-style: none;}
 a{ text-decoration: none; color:inherit;}
 a:hover{ color: #f9014d;}
+
+/*          ~SECTION~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.section{
+    float:left;
+    width: 100%;
+}
+/*          ~HEADER~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header{
+    display: none;
+}
+
+/*        ~SEARCH and STATISTIC~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.search-box{
+    background-image: url(../images/bg-search.jpg);
+    background-size: cover; /*ajusta a imagem dentro do box*/
+    background-position: center;
+    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;    
+}
+.search-box h1{
+    font-size: 37px;
+    font-weight: bold;
+
+}
+.search-box .tagline{
+    font-size: 26px;
+
+}
