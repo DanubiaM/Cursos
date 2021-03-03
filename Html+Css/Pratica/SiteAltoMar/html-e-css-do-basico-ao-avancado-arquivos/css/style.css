@@ -1,0 +1,22 @@
+/*          ~RESET~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+*, *:before, *:after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{ 
+    font-family: 'Opens Sans', sans-serif;
+    font-size: inherit;
+}
+
+input, select, iframe, button{
+    border: none;
+    font-family: 'Opens Sans', sans-serif;
+}
+
+h1,h2,h3{ margin:0; padding:0 ;}
+ul, ol { list-style: none;}
+a{ text-decoration: none; color:inherit;}
+a:hover{ color: #f9014d;}
