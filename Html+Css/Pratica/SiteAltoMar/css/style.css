@@ -36,6 +36,8 @@ a:hover{ color: #f9014d;}
 
 /*        ~SEARCH and STATISTIC~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*search*/
 .search-box{
     background-image: url(../images/bg-search.jpg);
     background-size: cover; /*ajusta a imagem dentro do box*/
@@ -66,12 +68,13 @@ a:hover{ color: #f9014d;}
     height: 50px;
     font-size: inherit;
     color:#2c3e50;
-    padding: 0 10px;
+    padding: 0 70px 0px 10px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     
 }
 .search-box form button{
+    font-size: 20px;
     background-color: #a70606;
     position: absolute;
     width: 50px;
@@ -83,4 +86,70 @@ a:hover{ color: #f9014d;}
     border-radius: 0 6px 6px 0;
     -webkit-border-radius: 0 6px 6px 0;
 
+}
+
+/*estatistica*/
+.estatisticas{
+    background: #fff;
+    max-width: 960px;
+    width: 90%;
+    padding: 30px 0;
+
+    margin: -40px auto 0 auto;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+} 
+.estatisticas-item span{
+    font-size: 33px;
+    font-weight: bold;
+
+}
+.estatisticas-item p{
+    font-size:20px;
+}
+
+/*        ~BREAKPOINTS MÁXIMOS~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media(max-width: 767.9px){   /*Essa estilização vai acontecer somente enquanto a largura for menor que 767.9px*/
+    .estatisticas{
+        flex-direction: column;
+
+    }
+    .estatisticas-item{
+        min-width: 90%;
+    }
+    .estatisticas-item:not(:last-of-type){ /*:not(:last-of-type) -->Diz para aplicar a estilização menos no ultimo.*/
+
+        margin-bottom:15px;
+        padding-bottom:15px;
+        border-bottom:1px solid #ccc;
+    }
+}
+/*        ~BREAKPOINTS MINÍMOS~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width:768px){
+    .search-box{
+        padding: 200px 0;
+    }
+    .estatisticas{
+        margin-top: -65px;
+
+    }
+    .estatisticas-item:not(:last-of-type){
+        border-right: 1px solid #ccc;
+    }
+    .estatisticas-item{
+        text-align: center;
+        display:flex;
+        flex:1; /*define como um ítem será posicionado para no espaço disponível dentro de seu contêiner*/
+        flex-direction: column; /*Os itens devem ficar em coluna*/
+
+    }
 }
