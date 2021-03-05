@@ -33,6 +33,7 @@ a:hover{ color: #f9014d;}
     display: none;
 }
 
+
 /*        ~SEARCH and STATISTIC~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .search-box{
@@ -51,5 +52,35 @@ a:hover{ color: #f9014d;}
 }
 .search-box .tagline{
     font-size: 26px;
+
+}
+.search-box form{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 40px;
+}
+.search-box form input[type="search"]{
+    width: 100%;
+    height: 50px;
+    font-size: inherit;
+    color:#2c3e50;
+    padding: 0 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    
+}
+.search-box form button{
+    background-color: #a70606;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    top:0;
+    right:0;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
 
 }
