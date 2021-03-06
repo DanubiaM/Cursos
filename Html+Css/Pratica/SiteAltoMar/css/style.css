@@ -21,18 +21,31 @@ ul, ol { list-style: none;}
 a{ text-decoration: none; color:inherit;}
 a:hover{ color: #f9014d;}
 
-/*          ~SECTION~
+/*          ~GERAIS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .section{
     float:left;
     width: 100%;
 }
+
+.content{
+    max-width: 960px;
+    width:90%;
+    margin: 0 auto;
+}
 /*          ~HEADER~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header{
-    display: none;
+    position:fixed;
+    width:100%;
+    padding-top:30px;
+    z-index:6;
 }
+.header .logo img{
+    max-width: 150px;
 
+
+}
 
 /*        ~SEARCH and STATISTIC~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -118,8 +131,40 @@ a:hover{ color: #f9014d;}
 /*        ~BREAKPOINTS MÁXIMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media(max-width: 767.9px){   /*Essa estilização vai acontecer somente enquanto a largura for menor que 767.9px*/
+    /*header-menu*/
+    .nav-toggle{
+        color:#fff;
+        font-size: 22px;
+    }
+    .nav-close{
+        font-size:22px;
+
+    }
+    .header .nav.active{ /*Quando utilizado sem espaço significa que quer 'atacar' junto da classe .nav*/
+        right:0;
+
+    }
+    .header .nav{
+        background: #fff;
+        width: 250px;
+        height: 100%;
+        position:fixed;
+        padding: 15px;
+        right:-100%; /*para nao aparecer na tela, apenas aparecera quando clicar no butão*/
+        top:0;
+        z-index:10;
+        transition: right .7s ease-in-out;
+    }
+    .header .nav ul li{
+        padding:15px 5px;
+        font-size:15px;
+        border-bottom: 1px solid  #ccc;
+    }
+
+
+    /*estatistica*/
     .estatisticas{
-        flex-direction: column;
+     flex-direction: column;
 
     }
     .estatisticas-item{
@@ -135,6 +180,29 @@ a:hover{ color: #f9014d;}
 /*        ~BREAKPOINTS MINÍMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media (min-width:768px){
+    /*header-menu*/
+    .nav-toggle, .nav-close{
+        display:none;
+    }
+    .header .nav{
+        float:right;
+        margin-top:20px;
+    }
+    .header .nav ul li{
+        display:inline-block;
+        margin-left:20px;
+    }
+
+    .header .nav ul li a{
+        color:#fff;
+
+    }
+    .header .nav ul li a:hover{
+        color:#f9014d;
+        
+    }
+
+    /*estatistica*/
     .search-box{
         padding: 200px 0;
     }
@@ -153,3 +221,13 @@ a:hover{ color: #f9014d;}
 
     }
 }
+
+/*        ~AUXILIARES~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.text-center{text-align: center;}
+.text-left{text-align:left;}
+.text-right{text-align: right;}
+
+.fl-left{float:left;}
+.fl-right{float:right;}
