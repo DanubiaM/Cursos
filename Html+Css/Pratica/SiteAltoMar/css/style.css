@@ -20,6 +20,7 @@ h1,h2,h3{ margin:0; padding:0 ;}
 ul, ol { list-style: none;}
 a{ text-decoration: none; color:inherit;}
 a:hover{ color: #f9014d;}
+img{max-width: 100%;boder:none;}
 
 /*          ~GERAIS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -36,7 +37,7 @@ a:hover{ color: #f9014d;}
 .section-header h1 {
     font-size: 38px;
     font-weight: normal;
-    
+
 }
 .content{
     max-width: 960px;
@@ -141,6 +142,95 @@ a:hover{ color: #f9014d;}
 .estatisticas-item p{
     font-size:20px;
 }
+
+/*        ~BOX DESTINOS~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.box{
+    display: block;
+    position: relative; /* como vamos usar div absolute dentro dele, devo usar relative no box.*/
+    overflow: hidden; /*utilizado para esconder o conteudo estourado, dessa maneira a borda é aplicada*/
+    border-radius: 10px;
+    -webkit-border-radiuns:10px;
+    width: 400px;
+
+
+}
+.box-name{
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top:10px;
+    font-size:14px;
+    color:#fff;
+    padding: 5px 10px;
+    background-color: #f9014d;
+    -webkit-border-radiuns:5px;
+    border-radius: 5px;
+}
+.box-cover{
+    font-size: 0;
+    line-height: 1em;
+}
+.box-cover img{
+    width:100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform: all 300ms ease-in-out ;
+    transition: all 300ms ease-in-out;
+
+}
+.box-detalhes{
+    position: absolute; /*pois vai ficar acima da imagem*/
+    width: 100%;
+    left:0;
+    bottom:0;
+    padding: 15px;
+    color:#fff;
+    font-size:15px;
+}
+.box-detalhes:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top:-20px;
+    right: 0;
+    bottom: 0;
+    left:0;
+    opacity: .8;
+    visibility: hidden;
+    background: linear-gradient(to bottom, transparent, #000);
+    
+    -webkit-transform: all 250ms ease-in-out ;
+    transition: all 250ms ease-in-out;
+    transform: translate(0, 50%);
+    -webkit-transform: translate(0,50%);
+}
+.box-detalhes-info{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transform: all 250ms ease-in-out ;
+    transition: all 250ms ease-in-out;
+    transform: translate(0, 50%); /* o metodo translate serve para o elemento da posição atual, em x e y*/
+    -webkit-transform: translate(0,50%);
+}
+.box-detalhes-info h2{
+    font-size: 20px;
+}
+.box:hover .box-cover img{ /* quando ativado box hover, ira atingir o .box-cover img*/
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.box:hover .box-detalhes:before,
+.box:hover .box-detalhes-info{
+    transform: translate(0, 0);
+    -webkit-transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /*        ~BREAKPOINTS MÁXIMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
