@@ -20,7 +20,7 @@ h1,h2,h3{ margin:0; padding:0 ;}
 ul, ol { list-style: none;}
 a{ text-decoration: none; color:inherit;}
 a:hover{ color: #f9014d;}
-img{max-width: 100%;boder:none;}
+img{max-width: 100%;border:none;}
 
 /*          ~GERAIS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -188,8 +188,8 @@ img{max-width: 100%;boder:none;}
     color:#fff;
     font-size:15px;
 }
-.box-detalhes:before{
-    content: "";
+.box-detalhes:before{ /*before significa que ira adiconar o conteudo antes do box-detalhes. Se fosse after, seria depois*/
+    content: ""; /*necessario o uso para utilizar a pseudo-elemento, caso deseje nenhum conteudo deixar sem nada */
     position: absolute;
     z-index: 1;
     top:-20px;
