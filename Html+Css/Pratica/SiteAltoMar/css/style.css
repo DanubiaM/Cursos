@@ -27,11 +27,25 @@ a:hover{ color: #f9014d;}
     float:left;
     width: 100%;
 }
+.section-header{
+    margin-top:40px;
+    text-align: center;
+    font-size: 20px;
 
+}
+.section-header h1 {
+    font-size: 38px;
+    font-weight: normal;
+    
+}
 .content{
     max-width: 960px;
     width:90%;
     margin: 0 auto;
+}
+.row{
+    float:left;
+    width: 100%;
 }
 /*          ~HEADER~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
