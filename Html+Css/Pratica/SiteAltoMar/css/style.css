@@ -345,6 +345,21 @@ img{max-width: 100%;border:none;}
     }
 }
 
+@media(min-width: 900px){
+    .destinos-col:nth-child(odd),
+    .destinos-col{
+        width: 32%; /*Como queremos três colunas, as bordas são ocupam 4%, entao 96/3 = 32% */
+        margin-right: 2%;
+    }
+    .destinos-col:first-child{
+        width: 66%;
+    }
+
+    .destinos-col:nth-of-type(3n+2){ /*REGRA: Do terceiro item, conta 2 e aplica a estilização*/
+        margin-right: 0;
+    }
+}
+
 /*        ~AUXILIARES~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
