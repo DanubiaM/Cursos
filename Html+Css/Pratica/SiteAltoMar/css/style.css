@@ -154,7 +154,6 @@ img{max-width: 100%;border:none;}
     overflow: hidden; /*utilizado para esconder o conteudo estourado, dessa maneira a borda é aplicada*/
     border-radius: 10px;
     -webkit-border-radiuns:10px;
-    width: 400px;
 
 
 }
@@ -232,6 +231,10 @@ img{max-width: 100%;border:none;}
     -webkit-transform: translate(0,0);
     opacity: 1;
     visibility: visible;
+}
+
+.destinos-col{
+    margin-bottom: 20px;
 }
 
 
@@ -326,6 +329,19 @@ img{max-width: 100%;border:none;}
         flex:1; /*define como um ítem será posicionado para no espaço disponível dentro de seu contêiner*/
         flex-direction: column; /*Os itens devem ficar em coluna*/
 
+    }
+
+    /*destino*/
+    .destinos-col{
+        width: 49%;
+        margin-right: 2%;
+        float:left;
+    }
+    .destinos-col:nth-child(odd){ /*ntg-child faz as estilização apenas nos filhos impares (odd), caso par usar even*/
+        margin-right: 0;
+    }
+    .destinos-col:first-child{
+        width: 100%;
     }
 }
 
