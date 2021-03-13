@@ -28,8 +28,11 @@ img{max-width: 100%;border:none;}
     float:left;
     width: 100%;
 }
+.section:not(:first-of-type){ /* caso não faça o not, a classe section tbm é usuada em search, logo iria aplicar o efeito lá também */
+    margin-top: 60px;
+}
 .section-header{
-    margin-top:40px;
+    margin-bottom:40px;
     text-align: center;
     font-size: 20px;
 
