@@ -51,6 +51,23 @@ img{max-width: 100%;border:none;}
     float:left;
     width: 100%;
 }
+
+.loadmore{
+    background: none;
+    margin-bottom: 100px;
+    border:1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor:pointer;
+    border-radius: 6px;
+    -webkit-border-radius:6px;
+}
+.loadmore:hover{
+    color:#a70606;
+    border:1px solid #a70606;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
 /*          ~HEADER~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header{
