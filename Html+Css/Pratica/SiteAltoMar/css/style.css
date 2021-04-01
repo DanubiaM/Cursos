@@ -335,6 +335,7 @@ img{max-width: 100%;border:none;}
     .destinos-col{
         width: 49%;
         margin-right: 2%;
+        margin-bottom: 2%;
         float:left;
     }
     .destinos-col:nth-child(odd){ /*ntg-child faz as estilização apenas nos filhos impares (odd), caso par usar even*/
