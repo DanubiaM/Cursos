@@ -75,11 +75,17 @@ img{max-width: 100%;border:none;}
     width:100%;
     padding-top:30px;
     z-index:6;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .header .logo img{
     max-width: 150px;
 
 
+}
+.header.fixed{ /* no html, as classes estão declaradas juntas logo deve ser chamada no css assim*/
+    background: #2c3e50;
+    padding: 10px 0 5px 0;
 }
 
 /*        ~SEARCH and STATISTIC~
@@ -313,7 +319,7 @@ img{max-width: 100%;border:none;}
     }
     .header .nav{
         float:right;
-        margin-top:20px;
+        margin-top:13px;
     }
     .header .nav ul li{
         display:inline-block;

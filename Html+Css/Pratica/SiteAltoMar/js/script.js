@@ -23,4 +23,15 @@ $(function(){
         */
     })
 
+    //FIXAR HEADER
+    $(window).scroll(function(){
+        if($(this).scrollTop() >100){
+            $('.header').addClass('fixed'); //no header adiciona a classe fixed
+        }else{
+            $('.header').removeClass('fixed'); // no header remove  a classe fixed
+
+        }
+        
+    });
+
 })
