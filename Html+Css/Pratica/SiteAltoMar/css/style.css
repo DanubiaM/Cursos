@@ -299,9 +299,12 @@ img{max-width: 100%;border:none;}
 
 }
 
-/*        ~DESTINOS~
+/*        ~DESTAQUE~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.destaques-col{
+    margin-bottom: 20px;
 
+}
 
 
 /*        ~BREAKPOINTS MÁXIMOS~
@@ -410,6 +413,17 @@ img{max-width: 100%;border:none;}
     .destinos-col:first-child{
         width: 100%;
     }
+    /*destaques*/
+    .destaques-col{
+        width: 49%;
+        margin-right:2% ;
+        float:left;
+        margin-bottom: 2%;
+    }
+    .destaques-col:nth-of-type(2n+0){/*REGRA: Do segundo item, conta 0 e aplica a estilização*/
+        margin-right: 0;
+    }
+
 }
 
 @media(min-width: 900px){
