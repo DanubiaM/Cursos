@@ -259,6 +259,47 @@ img{max-width: 100%;border:none;}
     margin-bottom: 20px;
 }
 
+/*        ~PARALLAX~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.parallax{
+    background-image: url(../images/bg-paralax.jpg);
+    background-size: cover; /*ajusta a imagem dentro do box*/
+    background-position: center;
+    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
+    float:left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 160px 0;    
+    margin: 60px 0;
+    font-size:23px;
+}
+.parallax h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+    
+}
+
+.parallax button{
+    font-size: 20px;
+    background-color: #f9014d;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor:pointer;
+    font-weight: bold;
+    -webkit-border-radius:6px;
+    border-radius: 6px;
+    color:#fff;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+}
+.parallax button:hover{
+    background-color: #e92863;
+
+}
+
+
 
 /*        ~BREAKPOINTS MÁXIMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
