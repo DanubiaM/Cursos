@@ -305,6 +305,57 @@ img{max-width: 100%;border:none;}
     margin-bottom: 20px;
 
 }
+/*        ~TESTEMUNHAS~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.testemunhas{
+    background-image: url(../images/bg-testemunhas.jpg);
+    background-size: cover; /*ajusta a imagem dentro do box*/
+    background-position: center;
+    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
+    padding: 160px 0;    
+    margin: 60px 0;
+}
+
+.testemunhas-article{
+    float:left;
+    background: rgba(255,255,255,.7);
+    width: 100%; /*tela toda para versao mobile, os demais tamanhos são alterados com o @media*/
+    font-size: 12px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+.testemunhas-article h1{
+    font-size:16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-left:15px;
+    border-left: 8px solid #ccc; 
+}
+.testemunhas-article .image{
+    overflow: hidden;
+    float:left;
+    margin-right: 10px;
+    width: 83px;
+    height: 83px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.testemunhas-article p{
+    display:flex; /* deixou os dois spans em flex*/
+    flex-direction: column; /* dessa maneira fica possivel de deixar os dois em forma de coluna*/
+    justify-content: center;
+    height: 83px;
+
+}
+.testemunhas-article p span:first-of-type{
+    color:#a70606;
+    font-weight: bold;
+}
+
+
 
 
 /*        ~BREAKPOINTS MÁXIMOS~
