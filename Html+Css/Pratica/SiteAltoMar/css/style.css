@@ -42,7 +42,7 @@ img{max-width: 100%;border:none;}
     font-weight: normal;
 
 }
-.content{
+.content{ /*responsavel por centralizar o conteudo do site*/
     max-width: 960px;
     width:90%;
     margin: 0 auto;
