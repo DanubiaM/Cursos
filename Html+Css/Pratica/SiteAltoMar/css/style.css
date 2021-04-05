@@ -312,7 +312,7 @@ img{max-width: 100%;border:none;}
     background-size: cover; /*ajusta a imagem dentro do box*/
     background-position: center;
     background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
-    padding: 160px 0;    
+    padding: 100px 0;    
     margin: 60px 0;
 }
 
@@ -322,6 +322,7 @@ img{max-width: 100%;border:none;}
     width: 100%; /*tela toda para versao mobile, os demais tamanhos são alterados com o @media*/
     font-size: 12px;
     padding: 15px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -475,6 +476,17 @@ img{max-width: 100%;border:none;}
         margin-right: 0;
     }
 
+    /*testeminha*/
+
+    .testemunhas-article{
+        width: calc((100% - 8%) /3);
+        margin-right: 4%;
+        margin-bottom: 4%;
+
+    }
+    .testemunhas-article:last-of-type{
+    margin-right: 0;
+    }    
 }
 
 @media(min-width: 900px){
