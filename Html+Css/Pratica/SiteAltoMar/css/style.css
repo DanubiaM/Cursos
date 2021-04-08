@@ -18,7 +18,7 @@ input, select, iframe, button{
 
 h1,h2,h3{ margin:0; padding:0 ;}
 ul, ol { list-style: none;}
-a{ text-decoration: none; color:inherit;}
+a{ text-decoration: none; color:inherit;transition: all .4s ease-in-out;}
 a:hover{ color: #f9014d;}
 img{max-width: 100%;border:none;}
 
@@ -385,8 +385,15 @@ img{max-width: 100%;border:none;}
     padding: 10px 5px;
 }
 .fab{
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 5px;
+    background: #000;
+    height: 30px;
+    line-height: 30px; /*altura da linha*/
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; 
 }
 
 /*        ~BREAKPOINTS MÁXIMOS~
