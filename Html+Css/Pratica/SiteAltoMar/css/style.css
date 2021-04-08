@@ -367,14 +367,27 @@ img{max-width: 100%;border:none;}
 .footer-col{
     width: 100%;
     float:left;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;   
+     
 }
 .footer-col h1{
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
 }
-
+.footer-col-link li{
+    padding:10px;
+}
+.footer-col-link li:not(:last-of-type){
+    border-bottom:1px solid #ccc;
+}
+.footer-col-social li{
+    padding: 10px 5px;
+}
+.fab{
+    font-size: 25px;
+    margin-right: 5px;
+}
 
 /*        ~BREAKPOINTS MÁXIMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -503,9 +516,36 @@ img{max-width: 100%;border:none;}
     }
     .testemunhas-article:last-of-type{
     margin-right: 0;
-    }    
-}
+    }
+    /*footer*/
+    .footer-col{
+        width: 40%;
+    } 
+    .footer-col:nth-child(2){ /*segunda coluna*/
+        width: 25%;
+        margin-left: 5%;
+    }   
+    .footer-col:nth-child(3){ /*terceira coluna*/
+        width: 20%;
+        margin-left: 5%;
 
+    }
+}
+@media(min-width:960px){
+   /*footer*/
+   .footer-col{
+    width: 45%;
+} 
+.footer-col:nth-child(2){ /*segunda coluna*/
+    width: 30%;
+    margin-left: 5%;
+}   
+.footer-col:nth-child(3){ /*terceira coluna*/
+    width: 15%;
+    margin-left: 5%;
+
+} 
+}
 @media(min-width: 900px){
     .destinos-col:nth-child(odd),
     .destinos-col{
