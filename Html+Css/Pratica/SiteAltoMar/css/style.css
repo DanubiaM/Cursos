@@ -395,6 +395,11 @@ img{max-width: 100%;border:none;}
     border-radius: 5px;
     -webkit-border-radius: 5px; 
 }
+.footer-altorais{
+    padding-top:20px;
+    border-top: 1px solid #fff;
+    color:#ccc;
+}
 
 /*        ~BREAKPOINTS MÁXIMOS~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
