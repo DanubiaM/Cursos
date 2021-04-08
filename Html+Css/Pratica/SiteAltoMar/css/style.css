@@ -93,9 +93,6 @@ img{max-width: 100%;border:none;}
 /*search*/
 .search-box{
     background-image: url(../images/bg-search.jpg);
-    background-size: cover; /*ajusta a imagem dentro do box*/
-    background-position: center;
-    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
     text-align: center;
     color: #fff;
     padding: 100px 0;    
@@ -263,9 +260,6 @@ img{max-width: 100%;border:none;}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .parallax{
     background-image: url(../images/bg-paralax.jpg);
-    background-size: cover; /*ajusta a imagem dentro do box*/
-    background-position: center;
-    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
     float:left;
     width: 100%;
     margin-top: 60px;
@@ -309,9 +303,7 @@ img{max-width: 100%;border:none;}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .testemunhas{
     background-image: url(../images/bg-testemunhas.jpg);
-    background-size: cover; /*ajusta a imagem dentro do box*/
-    background-position: center;
-    background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
+   
     padding: 100px 0;    
 }
 
@@ -576,9 +568,19 @@ img{max-width: 100%;border:none;}
 /*        ~AUXILIARES~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/*text align*/
 .text-center{text-align: center;}
 .text-left{text-align:left;}
 .text-right{text-align: right;}
 
+/*float*/
 .fl-left{float:left;}
 .fl-right{float:right;}
+
+/* bg-fixed */
+.bg-fixed{
+     background-size: cover; /*ajusta a imagem dentro do box*/
+     background-position: center;
+     background-attachment: fixed; /*deixa a imagem fixa quando passa a barra de rolagem*/
+     background-repeat: no-repeat;
+}     
