@@ -1,0 +1,24 @@
+/*          RESET
+----------------------
+*/
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*
+                                Sem esta propriedade um box1 de largura 10px e altura 10px é menor que
+                                um box2  com a largura 10px, altura 10px e padding de 15px px, pois o tamanho do box2
+                                é somado com o padding. 
+                                Para resolver isso o border-box faz com que os dois box's tenha o mesmo tamanho
+                                especificado, mesmo que tenha ou não padding
+                            */
+    -webkit-box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: inherit;
+}
+h1,h2,h3{ margin:0; padding: 0;}
+ul, ol{list-style:none;}
+img{max-width: 100%;border:none;}
+a{text-decoration: none;}
