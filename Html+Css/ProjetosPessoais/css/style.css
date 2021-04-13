@@ -43,6 +43,7 @@ a:hover{
     position: fixed;
     background: #EEEE;
     z-index: 5;
+    
 }
 .header .content .logo{
     max-width: 100px;
@@ -52,39 +53,64 @@ a:hover{
 
 
 
-
 /*      BREAKPOINTS
 ----------------------
 */
 @media(max-width:767.9px){
-    /*header*/
-    .content-menu ul{
-        display:none;
-    }
 
-    .content-nav{
+/*HEADER*/ 
+    .header .content-nav.active{
+        right: 0; /*para aparecer o menu*/
+    }
+    .header .content-nav{
+        position:fixed;
+        top:0;
+        right: -100%; /* para sumir o menu*/
+
+        background: #fff;
+        height: 100%;
+        min-width: 200px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        z-index: 10;
+
+        transition: right .4s ease-in-out;
+        
+    }    
+    .header .content-nav ul li{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px 5px;
+        border-bottom: 1px solid #BAC223;
+    }
+    .content-nav-close{
+        float:right;
+        font-size: 20px;
+        color:#999900;
+    }
+        /*MENU RESPONSIVO*/
+    .content-menu{
         float:right;
         margin-top: 50px;
         font-size: 20px;
         font-weight: bolder;
     }
-    .content-nav i{
+    .content-menu i{
         padding: 0px 15px;
     }
 
 
 
 }
-@media(min-width:768px){
-    .content-menu ul{
+@media(min-width:768px){ /*largura minima de 768*/
+    .content-nav ul{
         float:right;
         margin-top: 50px;
     }
-    .content-menu li{
+    .content-nav li{
         display: inline-block;
         padding: 0 10px;
     }
-    .content-nav{
+    .content-menu, .content-nav-close{
         display:none;
     }
 }
