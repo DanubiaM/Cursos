@@ -24,6 +24,7 @@ img{max-width: 100%;border:none;}
 a{text-decoration: none; color: initial}
 a:hover{
     color:#999900;
+    text-shadow: 0px 0px 5px #fff;
 }
 
 /*          GERAL
@@ -105,10 +106,15 @@ a:hover{
     .content-nav ul{
         float:right;
         margin-top: 50px;
+        border: 1px solid #ccc;
     }
     .content-nav li{
         display: inline-block;
-        padding: 0 10px;
+        padding: 5px 10px;        
+    }
+
+    .content-nav li:not(:last-of-type){       
+        border-right: 1px solid #ccc;
     }
     .content-menu, .content-nav-close{
         display:none;
