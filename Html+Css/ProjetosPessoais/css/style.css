@@ -59,7 +59,7 @@ a:hover{
 */
 @media(max-width:767.9px){
 
-/*HEADER*/ 
+/*                         HEADER              */
     .header .content-nav.active{
         right: 0; /*para aparecer o menu*/
     }
@@ -88,6 +88,28 @@ a:hover{
         font-size: 20px;
         color:#999900;
     }
+
+    
+    .content-nav .pousadas .submenu{
+        display:none;
+        position:relative;
+        width: 100%;
+        margin-left: 10px;
+        
+    }
+    .content-nav .pousadas .submenu a{
+        display:block;
+        margin: 10px 10px;
+        padding-bottom: 10px;
+    }
+    .content-nav .submenu a:not(:last-of-type){
+        border-bottom: 1px solid #BAC223;
+    }   
+    .content-nav .pousadas:hover .submenu{
+        display:inline-block;        
+
+    }
+
         /*MENU RESPONSIVO*/
     .content-menu{
         float:right;
@@ -105,6 +127,7 @@ a:hover{
 @media(min-width:768px){ /*largura minima de 768*/
 
 /*                         HEADER              */
+    
     .content-nav{
         float:right;
         margin-top: 50px;
@@ -120,7 +143,7 @@ a:hover{
         padding: 5px 15px;
 
     }
-    
+    /*SUB MENU*/
     .content-nav ul li.pousadas{
         display:inline-block;
     }
@@ -138,10 +161,11 @@ a:hover{
 
     .content-nav .submenu a{
         display:block;
-        margin-bottom: 10px;
     }
     .content-nav .submenu a:not(:last-of-type){
         border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+
     }
 
     /*Deixa submenu visivel ao passar o mouse*/
@@ -150,6 +174,8 @@ a:hover{
 
     }
     
+
+    /*  MENU TODO */
     .content-nav li:not(:last-of-type){       
         border-right: 1px solid #ccc;
     }
