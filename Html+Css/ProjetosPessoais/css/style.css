@@ -66,7 +66,7 @@ a:hover{
     .header .content-nav{
         position:fixed;
         top:0;
-        right: -100%; /* para sumir o menu*/
+        right: -200%; /* para sumir o menu*/
 
         background: #fff;
         height: 100%;
@@ -103,22 +103,64 @@ a:hover{
 
 }
 @media(min-width:768px){ /*largura minima de 768*/
-    .content-nav ul{
+
+/*                         HEADER              */
+    .content-nav{
         float:right;
         margin-top: 50px;
         border: 1px solid #ccc;
     }
-    .content-nav li{
-        display: inline-block;
-        padding: 5px 10px;        
+
+    .content-nav ul li{
+        float:left;
     }
 
+    .content-nav ul li a{
+        display: inline-block;
+        padding: 5px 15px;
+
+    }
+    
+    .content-nav ul li.pousadas{
+        display:inline-block;
+    }
+
+    /*esconde o submenu*/
+    .content-nav .submenu{
+        display: none;
+        position:absolute; /*para ficar sobreposto na tela*/
+
+        width: 140px;
+        z-index: 20;
+        background: #EEEE;
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    .content-nav .submenu a{
+        display:block;
+        margin-bottom: 10px;
+    }
+    .content-nav .submenu a:not(:last-of-type){
+        border-bottom: 1px solid #ccc;
+    }
+
+    /*Deixa submenu visivel ao passar o mouse*/
+    .content-nav .pousadas:hover .submenu{ /*quando passar o mouser por cima do pousadas vai alterar o submenu*/
+        display:block;
+
+    }
+    
     .content-nav li:not(:last-of-type){       
         border-right: 1px solid #ccc;
     }
+    
     .content-menu, .content-nav-close{
         display:none;
     }
+
+    
+    
+   
 }
 @media(min-width:900px){
     
