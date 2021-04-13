@@ -21,4 +21,73 @@ body{
 h1,h2,h3{ margin:0; padding: 0;}
 ul, ol{list-style:none;}
 img{max-width: 100%;border:none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: initial}
+a:hover{
+    color:#999900;
+}
+
+/*          GERAL
+-----------------------
+*/
+.content{
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+/*          HEADER
+-----------------------
+*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    background: #EEEE;
+    z-index: 5;
+}
+.header .content .logo{
+    max-width: 100px;
+    float:left;
+}
+
+
+
+
+
+/*      BREAKPOINTS
+----------------------
+*/
+@media(max-width:767.9px){
+    /*header*/
+    .content-menu ul{
+        display:none;
+    }
+
+    .content-nav{
+        float:right;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .content-nav i{
+        padding: 0px 15px;
+    }
+
+
+
+}
+@media(min-width:768px){
+    .content-menu ul{
+        float:right;
+        margin-top: 50px;
+    }
+    .content-menu li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .content-nav{
+        display:none;
+    }
+}
+@media(min-width:900px){
+    
+}
