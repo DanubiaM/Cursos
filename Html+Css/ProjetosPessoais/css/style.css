@@ -21,10 +21,10 @@ body{
 h1,h2,h3{ margin:0; padding: 0;}
 ul, ol{list-style:none;}
 img{max-width: 100%;border:none;}
-a{text-decoration: none; color: initial}
+a{text-decoration: none; color: #ffff;}
 a:hover{
-    color:#999900;
-    text-shadow: 0px 0px 5px #fff;
+    color:#a16ca1;
+   /* text-shadow: 0px 0px 5px #fff;*/
 }
 
 /*          GERAL
@@ -35,6 +35,10 @@ a:hover{
     width: 90%;
     margin: 0 auto;
 }
+.section{
+    float:left;
+    width: 100%;
+}
 /*          HEADER
 -----------------------
 */
@@ -42,15 +46,27 @@ a:hover{
 .header{
     width: 100%;
     position: fixed;
-    background: #EEEE;
+    background: #00173A;
     z-index: 5;
-    
 }
 .header .content .logo{
     max-width: 100px;
     float:left;
 }
+/*          DESTAQUES
+-----------------------
+*/
+.destaque{
+    background-image: url(../img/lodge-2438655_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
+    padding: 350px 0;
+    text-align: center;    
+
+}
 
 
 
@@ -68,12 +84,12 @@ a:hover{
         top:0;
         right: -200%; /* para sumir o menu*/
 
-        background: #fff;
+        background: #00173A;
         height: 100%;
         min-width: 200px;
-        border: 1px solid #ccc;
         padding: 15px;
         z-index: 10;
+        box-shadow: 0px 4px 8px #ccc;
 
         transition: right .4s ease-in-out;
         
@@ -130,7 +146,7 @@ a:hover{
     
     .content-nav{
         float:right;
-        margin-top: 50px;
+        margin-top: 40px;
         border: 1px solid #ccc;
     }
 
@@ -155,7 +171,7 @@ a:hover{
 
         width: 140px;
         z-index: 20;
-        background: #EEEE;
+        background:#00173A;
         box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
     }
 
