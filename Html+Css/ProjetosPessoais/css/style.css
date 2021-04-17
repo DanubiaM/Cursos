@@ -26,6 +26,16 @@ a:hover{
     color:#ff9900;
    /* text-shadow: 0px 0px 5px #fff;*/
 }
+button{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor:pointer;
+    color:#ffff;
+    background: #00173A;
+    border: 1px solid #d47f00;
+    border-radius: 2px;
+}
 
 /*          GERAL
 -----------------------
@@ -99,21 +109,42 @@ a:hover{
     margin-top: 40px;    
     padding: 10px;
 
-    background: #00173A;
-    border: 1px solid #d47f00;
-    color:white;
-    font-size: 15px;
-    border-radius: 2px;
-    font-weight: bolder;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: .4s ease-in-out;
 }
 
 .destaque header button:hover{
     cursor:pointer;
-    background:  hsla(0, 0%, 0%, 0.4)
+    background:  hsla(0, 0%, 0%, 0.8);
 }
 
+.agendar {
+    
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    color:#fff;
+    position:relative;
+    top: -150px; 
+    background: rgba(0,0,0,0.8);
+     
+}
+.agendar form p{
+    float:left;
+    padding-right:15px;
+    width: 150px;
+    
+    
+}
+.agendar form button{
+    margin-top: 20px;
+    float:left;
+
+    padding: 10px;
+    border-radius: 2px;
+
+}
+.agendar form button i{
+    padding-right: 5px;
+}
 
 
 /*      BREAKPOINTS
