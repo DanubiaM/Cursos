@@ -1,0 +1,31 @@
+COMPILAÇÃO
+	as -o <saida.o> <entrada.s>
+	ld -o <saida> <entrada.o>
+	./saida; echo $?
+
+GBD
+	as -g -o <saida.o> <entrada.s>
+	ld -o <saida> <entrada.o>
+	gbd <saida>
+
+	Ações:
+		l 			-> list
+		b <numero da linha> 	-> parada do programa
+		r 			-> executar
+		i r			-> info register
+		disas			-> disassembler
+
+SYSTEM CALLS RASPBIAN
+
+	REGISTRADOR 7
+		#1 finaliar o programa
+		#4 dispostivo de saida
+	REGISTRADOR 0
+		#1 dispostivo de saída: tela
+
+
+LEITURA syscall
+	RO = 0 leitura do teclado
+	R1 =  indicar o endereço do buffer
+	R2 = dizer quantos caracteres serao lidos
+	R7= 3  para fazer a chamada do syscall
