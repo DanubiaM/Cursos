@@ -2,12 +2,10 @@
 	print(Digite dois numeros:);
 	scanf(n1)
 	scanf(n2)
-
 	s = n1+n2
 	sub= n1-n2
 	div = n1/n2
 	multi = n1*n2
-
 	print("n1+n2")
 	print(s)
 	print("n1-n2")
@@ -16,66 +14,47 @@
 	print(div)
 	print("n1*n2")
 	print(multi)
-
 */
 
+/*
 .data
-.balign 4
 get_val_1: .asciz "Numero 1:\n"
-
-.balign 4
 get_val_2: .asciz "Numero 2:\n"
-
-.balign 4
 pattern: .asciz "%d"
-
-.balign 4
-num_1: .word 0
-
-.balign 4
-num_2: .word 0
-
-.balign 4
-sum: .word 0
-
-.balign 4
 output: .asciz "%d + %d = %d"
 
-.balign 4
-lr_bu: .word 0
 
-.balign 4
-lr_bu_2: .word
-
-.text 
-sum_vals:
-	LDR R2, addr_lr_bu_2
-	STR lr, [R2]
-
-	ADD R0, R0, R1
-
-	LDR lr, addr_lr_bu_2
-	LDR lr, [lr]
-	BX lr
-addr_lr_bu_2: .word lr_bu_2
-
+addr_get_val_1: .word get_val_1
+addr_get_val_2: .word get_val_2
+addr_pattern: .word pattern
+addr_output: .word output
+*/
 .global main
 
 main:
 
+	SUB SP, SP, #4
 
-	LDR R1, addr_lr_bu
-	STR lr, [R1]
 
 	LDR R0, addr_get_val_1
 	BL printf
 
 	LDR R0, addr_pattern 
-	LDR R1, addr_num_1
+	MOV R1, SP
 	BL scanf
+	LDR R1, [SP]
+	LDR R0, addr_output
+	BL printf
+	ADD SP, SP, #4
 
+_exit:
+	MOV R8, #0
+	SWI 0x11
+
+/*
 	LDR R0, addr_get_val_2
 	BL printf
+
 
 	LDR R0, addr_pattern
 	LDR R1, addr_num_2
@@ -96,20 +75,18 @@ main:
 	LDR R2, [R2]
 	BL printf
 
-
-	LDR lr, addr_lr_bu
-	LDR lr, [lr]
-	BX lr
-
+_fim:
+	MOV R7, #1
+	SWI 0
+*/
 addr_get_val_1: .word get_val_1
-addr_get_val_2: .word get_val_2
 addr_pattern: .word pattern
-addr_num_1: .word num_1
-addr_num_2: .word num_2
-addr_sum: .word sum
 addr_output: .word output
-addr_lr_bu: .word lr_bu
+
+.data
+get_val_1: .asciz "Digite um numero \n"
+pattern: .asciz "%d"
+output: .asciz "You  number is %d"
 
 .global printf
 .global scanf
-
