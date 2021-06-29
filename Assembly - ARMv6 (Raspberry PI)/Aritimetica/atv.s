@@ -43,7 +43,7 @@ output4: .asciz "%d / %d = %d \n"
 lr_bu: .word 0
 
 .balign 4
-lr_bu_2: .word
+lr_bu_2: .word 0
 
 .text 
 sum_vals:
@@ -187,7 +187,7 @@ addr_num_2: .word num_2
 addr_sum: .word sum
 addr_sub: .word sub
 addr_mul: .word mul
-.saddr_div: .word div
+addr_div: .word div
 addr_output1: .word output1
 addr_output2: .word output2
 addr_output3: .word output3
